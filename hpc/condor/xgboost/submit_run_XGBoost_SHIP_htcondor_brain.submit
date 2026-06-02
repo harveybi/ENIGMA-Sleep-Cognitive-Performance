@@ -1,0 +1,15 @@
+# The environment
+universe       = vanilla
+getenv         = True
+request_memory = 2GB
+request_disk   = 1GB
+request_cpus   = 1
+
+# Execution
+executable = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/run_XGBoost_SHIP_htcondor.sh
+
+arguments = Sleep_Cov_Brain_APOE_Shuffle Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_logs/SHIP/ml_pipeline_htcondor/Memory_Sleep_Cov_Brain_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_outputs/SHIP/ml_pipeline_htcondor/Memory_Sleep_Cov_Brain_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_errors/SHIP/ml_pipeline_htcondor/Memory_Sleep_Cov_Brain_APOE_Shuffle.err
+Queue

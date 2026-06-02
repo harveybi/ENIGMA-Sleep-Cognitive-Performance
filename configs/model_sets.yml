@@ -1,0 +1,32 @@
+targets:
+  - Stroop
+  - Memory
+
+feature_sets:
+  demographics:
+    - Age_at_Scan
+    - Sex
+    - Education
+  sleep:
+    - PSG_Sleep_Dur
+    - PSG_Sleep_Eff
+    - Self_Sleep_Dur
+    - Self_Sleep_Eff
+  brain:
+    - cortical_thickness
+    - surface_area
+    - subcortical_volume
+  genetics:
+    - APOE
+
+models:
+  primary:
+    - AutoGluon
+  comparators:
+    - XGBoost
+    - Ridge
+    - RandomForest
+    - SVM-linear
+    - SVM-rbf
+    - Dummy
+

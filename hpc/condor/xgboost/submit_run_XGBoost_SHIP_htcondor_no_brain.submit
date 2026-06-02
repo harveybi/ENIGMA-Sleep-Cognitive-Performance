@@ -1,0 +1,117 @@
+# The environment
+universe       = vanilla
+getenv         = True
+request_memory = 2GB
+request_disk   = 1GB
+request_cpus   = 1
+
+# Execution
+executable = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/run_XGBoost_SHIP_htcondor.sh
+
+arguments = Sleep Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_logs/SHIP/ml_pipeline_htcondor/Stroop_Sleep.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_outputs/SHIP/ml_pipeline_htcondor/Stroop_Sleep.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_errors/SHIP/ml_pipeline_htcondor/Stroop_Sleep.err
+Queue
+
+arguments = Cov Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_logs/SHIP/ml_pipeline_htcondor/Stroop_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_outputs/SHIP/ml_pipeline_htcondor/Stroop_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_errors/SHIP/ml_pipeline_htcondor/Stroop_Cov.err
+Queue
+
+arguments = Sleep_Cov Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_logs/SHIP/ml_pipeline_htcondor/Stroop_Sleep_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_outputs/SHIP/ml_pipeline_htcondor/Stroop_Sleep_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_errors/SHIP/ml_pipeline_htcondor/Stroop_Sleep_Cov.err
+Queue
+
+arguments = Sleep_Shuffle_Cov Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_logs/SHIP/ml_pipeline_htcondor/Stroop_Sleep_Shuffle_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_outputs/SHIP/ml_pipeline_htcondor/Stroop_Sleep_Shuffle_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_errors/SHIP/ml_pipeline_htcondor/Stroop_Sleep_Shuffle_Cov.err
+Queue
+
+arguments = Sleep_APOE Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_logs/SHIP/ml_pipeline_htcondor/Stroop_Sleep_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_outputs/SHIP/ml_pipeline_htcondor/Stroop_Sleep_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_errors/SHIP/ml_pipeline_htcondor/Stroop_Sleep_APOE.err
+Queue
+
+arguments = Sleep_APOE_Shuffle Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_logs/SHIP/ml_pipeline_htcondor/Stroop_Sleep_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_outputs/SHIP/ml_pipeline_htcondor/Stroop_Sleep_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_errors/SHIP/ml_pipeline_htcondor/Stroop_Sleep_APOE_Shuffle.err
+Queue
+
+arguments = Sleep_Cov_APOE Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_logs/SHIP/ml_pipeline_htcondor/Stroop_Sleep_Cov_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_outputs/SHIP/ml_pipeline_htcondor/Stroop_Sleep_Cov_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_errors/SHIP/ml_pipeline_htcondor/Stroop_Sleep_Cov_APOE.err
+Queue
+
+arguments = Sleep_Cov_APOE_Shuffle Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_logs/SHIP/ml_pipeline_htcondor/Stroop_Sleep_Cov_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_outputs/SHIP/ml_pipeline_htcondor/Stroop_Sleep_Cov_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_errors/SHIP/ml_pipeline_htcondor/Stroop_Sleep_Cov_APOE_Shuffle.err
+Queue
+
+arguments = Sleep_Cov Stroop_rgo_age
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_logs/SHIP/ml_pipeline_htcondor/Stroop_rgo_age_Sleep_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_outputs/SHIP/ml_pipeline_htcondor/Stroop_rgo_age_Sleep_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_errors/SHIP/ml_pipeline_htcondor/Stroop_rgo_age_Sleep_Cov.err
+Queue
+
+arguments = Sleep Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_logs/SHIP/ml_pipeline_htcondor/Memory_Sleep.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_outputs/SHIP/ml_pipeline_htcondor/Memory_Sleep.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_errors/SHIP/ml_pipeline_htcondor/Memory_Sleep.err
+Queue
+
+arguments = Cov Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_logs/SHIP/ml_pipeline_htcondor/Memory_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_outputs/SHIP/ml_pipeline_htcondor/Memory_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_errors/SHIP/ml_pipeline_htcondor/Memory_Cov.err
+Queue
+
+arguments = Sleep_Cov Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_logs/SHIP/ml_pipeline_htcondor/Memory_Sleep_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_outputs/SHIP/ml_pipeline_htcondor/Memory_Sleep_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_errors/SHIP/ml_pipeline_htcondor/Memory_Sleep_Cov.err
+Queue
+
+arguments = Sleep_Shuffle_Cov Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_logs/SHIP/ml_pipeline_htcondor/Memory_Sleep_Shuffle_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_outputs/SHIP/ml_pipeline_htcondor/Memory_Sleep_Shuffle_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_errors/SHIP/ml_pipeline_htcondor/Memory_Sleep_Shuffle_Cov.err
+Queue
+
+arguments = Sleep_APOE Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_logs/SHIP/ml_pipeline_htcondor/Memory_Sleep_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_outputs/SHIP/ml_pipeline_htcondor/Memory_Sleep_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_errors/SHIP/ml_pipeline_htcondor/Memory_Sleep_APOE.err
+Queue
+
+arguments = Sleep_APOE_Shuffle Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_logs/SHIP/ml_pipeline_htcondor/Memory_Sleep_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_outputs/SHIP/ml_pipeline_htcondor/Memory_Sleep_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_errors/SHIP/ml_pipeline_htcondor/Memory_Sleep_APOE_Shuffle.err
+Queue
+
+arguments = Sleep_Cov_APOE Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_logs/SHIP/ml_pipeline_htcondor/Memory_Sleep_Cov_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_outputs/SHIP/ml_pipeline_htcondor/Memory_Sleep_Cov_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_errors/SHIP/ml_pipeline_htcondor/Memory_Sleep_Cov_APOE.err
+Queue
+
+arguments = Sleep_Cov_APOE_Shuffle Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_logs/SHIP/ml_pipeline_htcondor/Memory_Sleep_Cov_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_outputs/SHIP/ml_pipeline_htcondor/Memory_Sleep_Cov_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_errors/SHIP/ml_pipeline_htcondor/Memory_Sleep_Cov_APOE_Shuffle.err
+Queue
+
+arguments = Sleep_Cov Memory_rgo_age
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_logs/SHIP/ml_pipeline_htcondor/Memory_rgo_age_Sleep_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_outputs/SHIP/ml_pipeline_htcondor/Memory_rgo_age_Sleep_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_errors/SHIP/ml_pipeline_htcondor/Memory_rgo_age_Sleep_Cov.err
+Queue

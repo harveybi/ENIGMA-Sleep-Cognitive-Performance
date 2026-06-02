@@ -1,0 +1,69 @@
+# The environment
+universe       = vanilla
+getenv         = True
+request_memory = 8GB
+request_disk   = 4GB
+request_cpus   = 1
+
+# Execution
+executable = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/run_SHAP_AutoGluon_SHIP_final_no_DK.sh
+
+arguments = Brain Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/SHAP_no_DK/Stroop_Brain.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/SHAP_no_DK/Stroop_Brain.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/SHAP_no_DK/Stroop_Brain.err
+Queue
+
+arguments = Sleep_Cov_Brain Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/SHAP_no_DK/Stroop_Sleep_Cov_Brain.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/SHAP_no_DK/Stroop_Sleep_Cov_Brain.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/SHAP_no_DK/Stroop_Sleep_Cov_Brain.err
+Queue
+
+arguments = Sleep_Cov_Brain_Shuffle Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/SHAP_no_DK/Stroop_Sleep_Cov_Brain_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/SHAP_no_DK/Stroop_Sleep_Cov_Brain_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/SHAP_no_DK/Stroop_Sleep_Cov_Brain_Shuffle.err
+Queue
+
+arguments = Sleep_Cov_Brain_APOE Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/SHAP_no_DK/Stroop_Sleep_Cov_Brain_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/SHAP_no_DK/Stroop_Sleep_Cov_Brain_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/SHAP_no_DK/Stroop_Sleep_Cov_Brain_APOE.err
+Queue
+
+arguments = Sleep_Cov_Brain_APOE_Shuffle Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/SHAP_no_DK/Stroop_Sleep_Cov_Brain_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/SHAP_no_DK/Stroop_Sleep_Cov_Brain_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/SHAP_no_DK/Stroop_Sleep_Cov_Brain_APOE_Shuffle.err
+Queue
+
+arguments = Brain Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/SHAP_no_DK/Memory_Brain.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/SHAP_no_DK/Memory_Brain.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/SHAP_no_DK/Memory_Brain.err
+Queue
+
+arguments = Sleep_Cov_Brain Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/SHAP_no_DK/Memory_Sleep_Cov_Brain.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/SHAP_no_DK/Memory_Sleep_Cov_Brain.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/SHAP_no_DK/Memory_Sleep_Cov_Brain.err
+Queue
+
+arguments = Sleep_Cov_Brain_Shuffle Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/SHAP_no_DK/Memory_Sleep_Cov_Brain_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/SHAP_no_DK/Memory_Sleep_Cov_Brain_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/SHAP_no_DK/Memory_Sleep_Cov_Brain_Shuffle.err
+Queue
+
+arguments = Sleep_Cov_Brain_APOE Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/SHAP_no_DK/Memory_Sleep_Cov_Brain_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/SHAP_no_DK/Memory_Sleep_Cov_Brain_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/SHAP_no_DK/Memory_Sleep_Cov_Brain_APOE.err
+Queue
+
+arguments = Sleep_Cov_Brain_APOE_Shuffle Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/SHAP_no_DK/Memory_Sleep_Cov_Brain_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/SHAP_no_DK/Memory_Sleep_Cov_Brain_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/SHAP_no_DK/Memory_Sleep_Cov_Brain_APOE_Shuffle.err
+Queue

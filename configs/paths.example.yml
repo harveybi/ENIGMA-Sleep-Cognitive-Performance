@@ -1,0 +1,22 @@
+# Copy this file to configs/paths.local.yml and edit paths for local execution.
+project_root: /path/to/ENIGMA_Sleep_Cognitive_Code
+
+data:
+  ship: /path/to/controlled/SHIP
+  emc: /path/to/controlled/EMC
+  ki: /path/to/controlled/KI
+  liege: /path/to/controlled/Liege
+  juelich: /path/to/controlled/Juelich
+  pitts: /path/to/controlled/Pitts
+  vetsa: /path/to/controlled/VETSA
+
+neuroimaging:
+  freesurfer_subjects_dir: /path/to/freesurfer/subjects
+  cat12_outputs: /path/to/cat12/outputs
+  schaefer_atlas_nii: /path/to/Schaefer2018_100Parcels_7Networks_order_FSLMNI152_1mm.nii
+
+outputs:
+  model_dir: /path/to/local/model_outputs
+  results_dir: /path/to/local/results
+  logs_dir: /path/to/local/logs
+

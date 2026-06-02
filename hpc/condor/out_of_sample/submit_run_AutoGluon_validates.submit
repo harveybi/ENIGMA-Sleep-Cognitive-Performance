@@ -1,0 +1,39 @@
+# The environment
+universe       = vanilla
+getenv         = True
+request_memory = 2GB
+request_disk   = 2GB
+request_cpus   = 1
+
+# Execution
+executable = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/run_AutoGluon_validates.sh
+
+arguments = Liege
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/AutoGluon/Liege.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/AutoGluon/Liege.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/AutoGluon/Liege.err
+Queue
+
+arguments = KI
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/AutoGluon/KI.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/AutoGluon/KI.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/AutoGluon/KI.err
+Queue
+
+arguments = Pitts
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/AutoGluon/Pitts.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/AutoGluon/Pitts.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/AutoGluon/Pitts.err
+Queue
+
+arguments = Juelich
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/AutoGluon/Juelich.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/AutoGluon/Juelich.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/AutoGluon/Juelich.err
+Queue
+
+arguments = VETSA
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/AutoGluon/VETSA.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/AutoGluon/VETSA.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/AutoGluon/VETSA.err
+Queue

@@ -1,0 +1,90 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local environments
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs and scheduler outputs
+*.log
+*_log.txt
+log.txt
+*.out
+*.err
+slurm-*.out
+combined_logs/
+**/combined_logs/
+condor_logs/
+condor_outputs/
+condor_errors/
+**/condor_logs/
+**/condor_outputs/
+**/condor_errors/
+logs/
+**/logs/
+
+# Job/model artifacts
+joblib_htcondor/
+**/joblib_htcondor/
+models/
+**/models/
+AutoGluonModels/
+**/AutoGluonModels/
+preprocessors_XGBoost_AutoGluon/
+**/preprocessors_XGBoost_AutoGluon/
+*.pkl
+*.pickle
+*.joblib
+*.model
+*.sav
+*.h5
+*.hdf5
+*.onnx
+*.ubj
+
+# Bulk/generated result artifacts
+force_plot_average.html
+*_force_plot_average.html
+*.metrics
+*.rescue*
+
+# Raw or controlled-access data
+data/raw/
+data/processed/
+data/controlled/
+Data/
+
+# Archives and local transfer bundles
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# Temporary files
+tmp/
+temp/
+

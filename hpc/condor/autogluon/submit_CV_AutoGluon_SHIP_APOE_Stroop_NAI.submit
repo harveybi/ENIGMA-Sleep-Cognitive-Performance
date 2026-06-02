@@ -1,0 +1,178 @@
+# The environment
+universe       = vanilla
+getenv         = True
+request_memory = 32GB
+request_disk   = 32GB
+request_cpus   = 1
+
+# Execution
+executable = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/run_CV_AutoGluon_SHIP_Stroop_NAI.sh
+
+arguments = Sleep_APOE Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Stroop_Sleep_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Stroop_Sleep_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Stroop_Sleep_APOE.err
+Queue
+
+arguments = Sleep_APOE_Shuffle Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Stroop_Sleep_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Stroop_Sleep_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Stroop_Sleep_APOE_Shuffle.err
+Queue
+
+arguments = Sleep_Cov_APOE Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Stroop_Sleep_Cov_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Stroop_Sleep_Cov_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Stroop_Sleep_Cov_APOE.err
+Queue
+
+arguments = Sleep_Cov_APOE_Shuffle Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Stroop_Sleep_Cov_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Stroop_Sleep_Cov_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Stroop_Sleep_Cov_APOE_Shuffle.err
+Queue
+
+arguments = Cov_APOE Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Stroop_Cov_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Stroop_Cov_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Stroop_Cov_APOE.err
+Queue
+
+arguments = Cov_APOE_Shuffle Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Stroop_Cov_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Stroop_Cov_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Stroop_Cov_APOE_Shuffle.err
+Queue
+
+arguments = Brain_APOE Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Stroop_Brain_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Stroop_Brain_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Stroop_Brain_APOE.err
+Queue
+
+arguments = Brain_APOE_Shuffle Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Stroop_Brain_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Stroop_Brain_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Stroop_Brain_APOE_Shuffle.err
+Queue
+
+arguments = Subcor_APOE Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Stroop_Subcor_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Stroop_Subcor_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Stroop_Subcor_APOE.err
+Queue
+
+arguments = Subcor_APOE_Shuffle Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Stroop_Subcor_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Stroop_Subcor_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Stroop_Subcor_APOE_Shuffle.err
+Queue
+
+arguments = Sleep_Cov_Brain_APOE Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Stroop_Sleep_Cov_Brain_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Stroop_Sleep_Cov_Brain_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Stroop_Sleep_Cov_Brain_APOE.err
+Queue
+
+arguments = Sleep_Cov_Brain_APOE_Shuffle Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Stroop_Sleep_Cov_Brain_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Stroop_Sleep_Cov_Brain_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Stroop_Sleep_Cov_Brain_APOE_Shuffle.err
+Queue
+
+arguments = Sleep_Cov_Subcor_APOE Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Stroop_Sleep_Cov_Subcor_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Stroop_Sleep_Cov_Subcor_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Stroop_Sleep_Cov_Subcor_APOE.err
+Queue
+
+arguments = Sleep_Cov_Subcor_APOE_Shuffle Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Stroop_Sleep_Cov_Subcor_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Stroop_Sleep_Cov_Subcor_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Stroop_Sleep_Cov_Subcor_APOE_Shuffle.err
+Queue
+
+arguments = Sleep_APOE Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Memory_Sleep_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Memory_Sleep_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Memory_Sleep_APOE.err
+Queue
+
+arguments = Sleep_APOE_Shuffle Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Memory_Sleep_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Memory_Sleep_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Memory_Sleep_APOE_Shuffle.err
+Queue
+
+arguments = Sleep_Cov_APOE Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Memory_Sleep_Cov_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Memory_Sleep_Cov_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Memory_Sleep_Cov_APOE.err
+Queue
+
+arguments = Sleep_Cov_APOE_Shuffle Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Memory_Sleep_Cov_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Memory_Sleep_Cov_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Memory_Sleep_Cov_APOE_Shuffle.err
+Queue
+
+arguments = Cov_APOE Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Memory_Cov_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Memory_Cov_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Memory_Cov_APOE.err
+Queue
+
+arguments = Cov_APOE_Shuffle Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Memory_Cov_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Memory_Cov_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Memory_Cov_APOE_Shuffle.err
+Queue
+
+arguments = Brain_APOE Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Memory_Brain_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Memory_Brain_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Memory_Brain_APOE.err
+Queue
+
+arguments = Brain_APOE_Shuffle Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Memory_Brain_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Memory_Brain_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Memory_Brain_APOE_Shuffle.err
+Queue
+
+arguments = Subcor_APOE Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Memory_Subcor_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Memory_Subcor_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Memory_Subcor_APOE.err
+Queue
+
+arguments = Subcor_APOE_Shuffle Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Memory_Subcor_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Memory_Subcor_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Memory_Subcor_APOE_Shuffle.err
+Queue
+
+arguments = Sleep_Cov_Brain_APOE Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Memory_Sleep_Cov_Brain_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Memory_Sleep_Cov_Brain_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Memory_Sleep_Cov_Brain_APOE.err
+Queue
+
+arguments = Sleep_Cov_Brain_APOE_Shuffle Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Memory_Sleep_Cov_Brain_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Memory_Sleep_Cov_Brain_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Memory_Sleep_Cov_Brain_APOE_Shuffle.err
+Queue
+
+arguments = Sleep_Cov_Subcor_APOE Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Memory_Sleep_Cov_Subcor_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Memory_Sleep_Cov_Subcor_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Memory_Sleep_Cov_Subcor_APOE.err
+Queue
+
+arguments = Sleep_Cov_Subcor_APOE_Shuffle Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/CV/Memory_Sleep_Cov_Subcor_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/CV/Memory_Sleep_Cov_Subcor_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/CV/Memory_Sleep_Cov_Subcor_APOE_Shuffle.err
+Queue
+

@@ -1,0 +1,150 @@
+JOB AutoGluon_Stroop_Sleep submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Stroop_Sleep feature_comb="Sleep" target="Stroop" req_cpu="16"
+JOB AutoGluon_Stroop_Cov submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Stroop_Cov feature_comb="Cov" target="Stroop" req_cpu="16"
+JOB AutoGluon_Stroop_Sleep_Cov submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Stroop_Sleep_Cov feature_comb="Sleep_Cov" target="Stroop" req_cpu="16"
+JOB AutoGluon_Stroop_Sleep_Cov_Brain submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Stroop_Sleep_Cov_Brain feature_comb="Sleep_Cov_Brain" target="Stroop" req_cpu="16"
+JOB AutoGluon_Stroop_Sleep_Cov_CT submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Stroop_Sleep_Cov_CT feature_comb="Sleep_Cov_CT" target="Stroop" req_cpu="16"
+JOB AutoGluon_Stroop_Sleep_Cov_SA submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Stroop_Sleep_Cov_SA feature_comb="Sleep_Cov_SA" target="Stroop" req_cpu="16"
+JOB AutoGluon_Stroop_Sleep_Cov_Subcor submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Stroop_Sleep_Cov_Subcor feature_comb="Sleep_Cov_Subcor" target="Stroop" req_cpu="16"
+JOB AutoGluon_Stroop_Cov_Brain submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Stroop_Cov_Brain feature_comb="Cov_Brain" target="Stroop" req_cpu="16"
+JOB AutoGluon_Stroop_Cov_CT submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Stroop_Cov_CT feature_comb="Cov_CT" target="Stroop" req_cpu="16"
+JOB AutoGluon_Stroop_Cov_SA submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Stroop_Cov_SA feature_comb="Cov_SA" target="Stroop" req_cpu="16"
+JOB AutoGluon_Stroop_Cov_Subcor submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Stroop_Cov_Subcor feature_comb="Cov_Subcor" target="Stroop" req_cpu="16"
+JOB AutoGluon_Stroop_Sleep_Shuffle_Cov submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Stroop_Sleep_Shuffle_Cov feature_comb="Sleep_Shuffle_Cov" target="Stroop" req_cpu="16"
+JOB AutoGluon_Stroop_Sleep_Cov_Subcor_Shuffle submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Stroop_Sleep_Cov_Subcor_Shuffle feature_comb="Sleep_Cov_Subcor_Shuffle" target="Stroop" req_cpu="16"
+JOB AutoGluon_Stroop_Cov_Brain_Shuffle submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Stroop_Cov_Brain_Shuffle feature_comb="Cov_Brain_Shuffle" target="Stroop" req_cpu="16"
+JOB AutoGluon_Stroop_Cov_Subcor_Shuffle submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Stroop_Cov_Subcor_Shuffle feature_comb="Cov_Subcor_Shuffle" target="Stroop" req_cpu="16"
+JOB AutoGluon_Memory_Sleep submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Memory_Sleep feature_comb="Sleep" target="Memory" req_cpu="16"
+JOB AutoGluon_Memory_Cov submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Memory_Cov feature_comb="Cov" target="Memory" req_cpu="16"
+JOB AutoGluon_Memory_Sleep_Cov submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Memory_Sleep_Cov feature_comb="Sleep_Cov" target="Memory" req_cpu="16"
+JOB AutoGluon_Memory_Sleep_Cov_Brain submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Memory_Sleep_Cov_Brain feature_comb="Sleep_Cov_Brain" target="Memory" req_cpu="16"
+JOB AutoGluon_Memory_Sleep_Cov_CT submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Memory_Sleep_Cov_CT feature_comb="Sleep_Cov_CT" target="Memory" req_cpu="16"
+JOB AutoGluon_Memory_Sleep_Cov_SA submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Memory_Sleep_Cov_SA feature_comb="Sleep_Cov_SA" target="Memory" req_cpu="16"
+JOB AutoGluon_Memory_Sleep_Cov_Subcor submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Memory_Sleep_Cov_Subcor feature_comb="Sleep_Cov_Subcor" target="Memory" req_cpu="16"
+JOB AutoGluon_Memory_Cov_Brain submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Memory_Cov_Brain feature_comb="Cov_Brain" target="Memory" req_cpu="16"
+JOB AutoGluon_Memory_Cov_CT submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Memory_Cov_CT feature_comb="Cov_CT" target="Memory" req_cpu="16"
+JOB AutoGluon_Memory_Cov_SA submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Memory_Cov_SA feature_comb="Cov_SA" target="Memory" req_cpu="16"
+JOB AutoGluon_Memory_Cov_Subcor submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Memory_Cov_Subcor feature_comb="Cov_Subcor" target="Memory" req_cpu="16"
+JOB AutoGluon_Memory_Sleep_Shuffle_Cov submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Memory_Sleep_Shuffle_Cov feature_comb="Sleep_Shuffle_Cov" target="Memory" req_cpu="16"
+JOB AutoGluon_Memory_Sleep_Cov_Subcor_Shuffle submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Memory_Sleep_Cov_Subcor_Shuffle feature_comb="Sleep_Cov_Subcor_Shuffle" target="Memory" req_cpu="16"
+JOB AutoGluon_Memory_Cov_Brain_Shuffle submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Memory_Cov_Brain_Shuffle feature_comb="Cov_Brain_Shuffle" target="Memory" req_cpu="16"
+JOB AutoGluon_Memory_Cov_Subcor_Shuffle submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon_Memory_Cov_Subcor_Shuffle feature_comb="Cov_Subcor_Shuffle" target="Memory" req_cpu="16"
+JOB SHAP_Stroop_Sleep submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Stroop_Sleep feature_comb="Sleep" target="Stroop"
+JOB SHAP_Stroop_Cov submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Stroop_Cov feature_comb="Cov" target="Stroop"
+JOB SHAP_Stroop_Sleep_Cov submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Stroop_Sleep_Cov feature_comb="Sleep_Cov" target="Stroop"
+JOB SHAP_Stroop_Sleep_Cov_Brain submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Stroop_Sleep_Cov_Brain feature_comb="Sleep_Cov_Brain" target="Stroop"
+JOB SHAP_Stroop_Sleep_Cov_CT submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Stroop_Sleep_Cov_CT feature_comb="Sleep_Cov_CT" target="Stroop"
+JOB SHAP_Stroop_Sleep_Cov_SA submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Stroop_Sleep_Cov_SA feature_comb="Sleep_Cov_SA" target="Stroop"
+JOB SHAP_Stroop_Sleep_Cov_Subcor submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Stroop_Sleep_Cov_Subcor feature_comb="Sleep_Cov_Subcor" target="Stroop"
+JOB SHAP_Stroop_Cov_Brain submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Stroop_Cov_Brain feature_comb="Cov_Brain" target="Stroop"
+JOB SHAP_Stroop_Cov_CT submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Stroop_Cov_CT feature_comb="Cov_CT" target="Stroop"
+JOB SHAP_Stroop_Cov_SA submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Stroop_Cov_SA feature_comb="Cov_SA" target="Stroop"
+JOB SHAP_Stroop_Cov_Subcor submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Stroop_Cov_Subcor feature_comb="Cov_Subcor" target="Stroop"
+JOB SHAP_Stroop_Sleep_Shuffle_Cov submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Stroop_Sleep_Shuffle_Cov feature_comb="Sleep_Shuffle_Cov" target="Stroop"
+JOB SHAP_Stroop_Sleep_Cov_Subcor_Shuffle submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Stroop_Sleep_Cov_Subcor_Shuffle feature_comb="Sleep_Cov_Subcor_Shuffle" target="Stroop"
+JOB SHAP_Stroop_Cov_Brain_Shuffle submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Stroop_Cov_Brain_Shuffle feature_comb="Cov_Brain_Shuffle" target="Stroop"
+JOB SHAP_Stroop_Cov_Subcor_Shuffle submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Stroop_Cov_Subcor_Shuffle feature_comb="Cov_Subcor_Shuffle" target="Stroop"
+JOB SHAP_Memory_Sleep submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Memory_Sleep feature_comb="Sleep" target="Memory"
+JOB SHAP_Memory_Cov submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Memory_Cov feature_comb="Cov" target="Memory"
+JOB SHAP_Memory_Sleep_Cov submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Memory_Sleep_Cov feature_comb="Sleep_Cov" target="Memory"
+JOB SHAP_Memory_Sleep_Cov_Brain submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Memory_Sleep_Cov_Brain feature_comb="Sleep_Cov_Brain" target="Memory"
+JOB SHAP_Memory_Sleep_Cov_CT submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Memory_Sleep_Cov_CT feature_comb="Sleep_Cov_CT" target="Memory"
+JOB SHAP_Memory_Sleep_Cov_SA submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Memory_Sleep_Cov_SA feature_comb="Sleep_Cov_SA" target="Memory"
+JOB SHAP_Memory_Sleep_Cov_Subcor submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Memory_Sleep_Cov_Subcor feature_comb="Sleep_Cov_Subcor" target="Memory"
+JOB SHAP_Memory_Cov_Brain submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Memory_Cov_Brain feature_comb="Cov_Brain" target="Memory"
+JOB SHAP_Memory_Cov_CT submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Memory_Cov_CT feature_comb="Cov_CT" target="Memory"
+JOB SHAP_Memory_Cov_SA submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Memory_Cov_SA feature_comb="Cov_SA" target="Memory"
+JOB SHAP_Memory_Cov_Subcor submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Memory_Cov_Subcor feature_comb="Cov_Subcor" target="Memory"
+JOB SHAP_Memory_Sleep_Shuffle_Cov submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Memory_Sleep_Shuffle_Cov feature_comb="Sleep_Shuffle_Cov" target="Memory"
+JOB SHAP_Memory_Sleep_Cov_Subcor_Shuffle submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Memory_Sleep_Cov_Subcor_Shuffle feature_comb="Sleep_Cov_Subcor_Shuffle" target="Memory"
+JOB SHAP_Memory_Cov_Brain_Shuffle submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Memory_Cov_Brain_Shuffle feature_comb="Cov_Brain_Shuffle" target="Memory"
+JOB SHAP_Memory_Cov_Subcor_Shuffle submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP_Memory_Cov_Subcor_Shuffle feature_comb="Cov_Subcor_Shuffle" target="Memory"
+PARENT AutoGluon_Stroop_Sleep CHILD SHAP_Stroop_Sleep
+PARENT AutoGluon_Stroop_Cov CHILD SHAP_Stroop_Cov
+PARENT AutoGluon_Stroop_Sleep_Cov CHILD SHAP_Stroop_Sleep_Cov
+PARENT AutoGluon_Stroop_Sleep_Cov_Brain CHILD SHAP_Stroop_Sleep_Cov_Brain
+PARENT AutoGluon_Stroop_Sleep_Cov_CT CHILD SHAP_Stroop_Sleep_Cov_CT
+PARENT AutoGluon_Stroop_Sleep_Cov_SA CHILD SHAP_Stroop_Sleep_Cov_SA
+PARENT AutoGluon_Stroop_Sleep_Cov_Subcor CHILD SHAP_Stroop_Sleep_Cov_Subcor
+PARENT AutoGluon_Stroop_Cov_Brain CHILD SHAP_Stroop_Cov_Brain
+PARENT AutoGluon_Stroop_Cov_CT CHILD SHAP_Stroop_Cov_CT
+PARENT AutoGluon_Stroop_Cov_SA CHILD SHAP_Stroop_Cov_SA
+PARENT AutoGluon_Stroop_Cov_Subcor CHILD SHAP_Stroop_Cov_Subcor
+PARENT AutoGluon_Stroop_Sleep_Shuffle_Cov CHILD SHAP_Stroop_Sleep_Shuffle_Cov
+PARENT AutoGluon_Stroop_Sleep_Cov_Subcor_Shuffle CHILD SHAP_Stroop_Sleep_Cov_Subcor_Shuffle
+PARENT AutoGluon_Stroop_Cov_Brain_Shuffle CHILD SHAP_Stroop_Cov_Brain_Shuffle
+PARENT AutoGluon_Stroop_Cov_Subcor_Shuffle CHILD SHAP_Stroop_Cov_Subcor_Shuffle
+PARENT AutoGluon_Memory_Sleep CHILD SHAP_Memory_Sleep
+PARENT AutoGluon_Memory_Cov CHILD SHAP_Memory_Cov
+PARENT AutoGluon_Memory_Sleep_Cov CHILD SHAP_Memory_Sleep_Cov
+PARENT AutoGluon_Memory_Sleep_Cov_Brain CHILD SHAP_Memory_Sleep_Cov_Brain
+PARENT AutoGluon_Memory_Sleep_Cov_CT CHILD SHAP_Memory_Sleep_Cov_CT
+PARENT AutoGluon_Memory_Sleep_Cov_SA CHILD SHAP_Memory_Sleep_Cov_SA
+PARENT AutoGluon_Memory_Sleep_Cov_Subcor CHILD SHAP_Memory_Sleep_Cov_Subcor
+PARENT AutoGluon_Memory_Cov_Brain CHILD SHAP_Memory_Cov_Brain
+PARENT AutoGluon_Memory_Cov_CT CHILD SHAP_Memory_Cov_CT
+PARENT AutoGluon_Memory_Cov_SA CHILD SHAP_Memory_Cov_SA
+PARENT AutoGluon_Memory_Cov_Subcor CHILD SHAP_Memory_Cov_Subcor
+PARENT AutoGluon_Memory_Sleep_Shuffle_Cov CHILD SHAP_Memory_Sleep_Shuffle_Cov
+PARENT AutoGluon_Memory_Sleep_Cov_Subcor_Shuffle CHILD SHAP_Memory_Sleep_Cov_Subcor_Shuffle
+PARENT AutoGluon_Memory_Cov_Brain_Shuffle CHILD SHAP_Memory_Cov_Brain_Shuffle
+PARENT AutoGluon_Memory_Cov_Subcor_Shuffle CHILD SHAP_Memory_Cov_Subcor_Shuffle

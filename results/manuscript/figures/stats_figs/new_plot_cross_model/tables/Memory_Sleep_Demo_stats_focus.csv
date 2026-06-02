@@ -1,0 +1,64 @@
+metric,t-stat,p-val,model_1,model_2,p-val-corrected,significance,significant
+test_r2,-0.9450190033407346,0.349285994891255,Linear Regression,Ridge Regression,1.0,ns,False
+test_r2,0.26526147164894737,0.7919208348260105,Linear Regression,SVM-linear,1.0,ns,False
+test_r2,0.032517286539662904,0.9741916265761912,Linear Regression,SVM-rbf,1.0,ns,False
+test_r2,1.6110588587068044,0.11359065446384918,Linear Regression,Random Forest,1.0,ns,False
+test_r2,0.9236655563326178,0.3596951392968263,Linear Regression,XGBoost,1.0,ns,False
+test_r2,0.5027513070565719,0.6171464116844689,Linear Regression,AutoGluon,1.0,ns,False
+test_r2,0.27230398074020495,0.7865324945497362,Ridge Regression,SVM-linear,1.0,ns,False
+test_r2,0.038923248736769604,0.9691097358215716,Ridge Regression,SVM-rbf,1.0,ns,False
+test_r2,1.6171867533967064,0.11225847827693378,Ridge Regression,Random Forest,1.0,ns,False
+test_r2,0.9267205899287655,0.358120482286311,Ridge Regression,XGBoost,1.0,ns,False
+test_r2,0.5053161459523828,0.6153558629102822,Ridge Regression,AutoGluon,1.0,ns,False
+test_r2,-0.38178002305387304,0.7042752265075389,SVM-linear,SVM-rbf,1.0,ns,False
+test_r2,1.2510157688583279,0.2168690897342897,SVM-linear,Random Forest,1.0,ns,False
+test_r2,0.8747622691426998,0.3855072825264996,SVM-linear,XGBoost,1.0,ns,False
+test_r2,0.45895095229361,0.6480780589146415,SVM-linear,AutoGluon,1.0,ns,False
+test_r2,1.5020153967032255,0.13951062301975778,SVM-rbf,Random Forest,1.0,ns,False
+test_r2,0.9689281997130595,0.3368227331058785,SVM-rbf,XGBoost,1.0,ns,False
+test_r2,0.525886885162819,0.6010809022200678,SVM-rbf,AutoGluon,1.0,ns,False
+test_r2,-0.059545846829044714,0.952733185433424,Random Forest,XGBoost,1.0,ns,False
+test_r2,-0.47211906855928903,0.6387096672584447,Random Forest,AutoGluon,1.0,ns,False
+test_r2,-1.0206787299064035,0.312419750301581,XGBoost,AutoGluon,1.0,ns,False
+test_r_corr,-0.3508113765681185,0.7272336644231328,Linear Regression,Ridge Regression,1.0,ns,False
+test_r_corr,-0.6606696801447394,0.5119184197316689,Linear Regression,SVM-linear,1.0,ns,False
+test_r_corr,-0.6126075274463537,0.5429686593375933,Linear Regression,SVM-rbf,1.0,ns,False
+test_r_corr,1.600029080368412,0.1160208000488001,Linear Regression,Random Forest,1.0,ns,False
+test_r_corr,1.192263375199138,0.2382767683566169,Linear Regression,XGBoost,1.0,ns,False
+test_r_corr,0.7269846067469694,0.47031850265440234,Linear Regression,AutoGluon,1.0,ns,False
+test_r_corr,-0.6579808302195952,0.5136299839364838,Ridge Regression,SVM-linear,1.0,ns,False
+test_r_corr,-0.6117551575358032,0.5435279380261875,Ridge Regression,SVM-rbf,1.0,ns,False
+test_r_corr,1.6022898078344343,0.11551930053012922,Ridge Regression,Random Forest,1.0,ns,False
+test_r_corr,1.1929960938987114,0.23799204536904267,Ridge Regression,XGBoost,1.0,ns,False
+test_r_corr,0.7275270338205948,0.4699889471503391,Ridge Regression,AutoGluon,1.0,ns,False
+test_r_corr,-0.3357189747365055,0.7385160673830309,SVM-linear,SVM-rbf,1.0,ns,False
+test_r_corr,1.73080582474382,0.08977996379415404,SVM-linear,Random Forest,1.0,ns,False
+test_r_corr,1.3124011745824447,0.19483547673076845,SVM-linear,XGBoost,1.0,ns,False
+test_r_corr,0.856673561005515,0.39534257754477076,SVM-linear,AutoGluon,1.0,ns,False
+test_r_corr,2.1054437926345106,0.04040161784311649,SVM-rbf,Random Forest,0.8484339747054462,ns,False
+test_r_corr,1.3873713708492041,0.17092476631536588,SVM-rbf,XGBoost,1.0,ns,False
+test_r_corr,0.9152654383757504,0.3640478080020878,SVM-rbf,AutoGluon,1.0,ns,False
+test_r_corr,0.20778170739288968,0.8361668927582938,Random Forest,XGBoost,1.0,ns,False
+test_r_corr,-0.24175828336492716,0.8098665964076626,Random Forest,AutoGluon,1.0,ns,False
+test_r_corr,-1.002158799542168,0.32119036004692647,XGBoost,AutoGluon,1.0,ns,False
+test_spearmanr,-0.2772282783334694,0.7827710663870392,Linear Regression,Ridge Regression,1.0,ns,False
+test_spearmanr,-0.4148468588702202,0.6800647781753182,Linear Regression,SVM-linear,1.0,ns,False
+test_spearmanr,-0.7545953054814479,0.4541033594324325,Linear Regression,SVM-rbf,1.0,ns,False
+test_spearmanr,1.3274360909607466,0.1905161881318357,Linear Regression,Random Forest,1.0,ns,False
+test_spearmanr,1.0062262518801888,0.318713257066624,Linear Regression,XGBoost,1.0,ns,False
+test_spearmanr,0.6278504587474009,0.532700239181203,Linear Regression,AutoGluon,1.0,ns,False
+test_spearmanr,-0.40955602952807724,0.6839165842857217,Ridge Regression,SVM-linear,1.0,ns,False
+test_spearmanr,-0.7518690239060403,0.45572630013333615,Ridge Regression,SVM-rbf,1.0,ns,False
+test_spearmanr,1.3304820178805685,0.18951850153465952,Ridge Regression,Random Forest,1.0,ns,False
+test_spearmanr,1.0067950158878538,0.3184422676350467,Ridge Regression,XGBoost,1.0,ns,False
+test_spearmanr,0.6288897125235604,0.5320246226037424,Ridge Regression,AutoGluon,1.0,ns,False
+test_spearmanr,-0.6992391765071647,0.4877086653558119,SVM-linear,SVM-rbf,1.0,ns,False
+test_spearmanr,1.412136622173401,0.16422934316489138,SVM-linear,Random Forest,1.0,ns,False
+test_spearmanr,1.0805064697090918,0.28463201635681007,SVM-linear,XGBoost,1.0,ns,False
+test_spearmanr,0.7154128114111714,0.47738018677233884,SVM-linear,AutoGluon,1.0,ns,False
+test_spearmanr,1.8240032955568888,0.07425294635723428,SVM-rbf,Random Forest,1.0,ns,False
+test_spearmanr,1.2346436178974542,0.22221210775537706,SVM-rbf,XGBoost,1.0,ns,False
+test_spearmanr,0.8497419276471506,0.3991524282432176,SVM-rbf,AutoGluon,1.0,ns,False
+test_spearmanr,0.2885734317224716,0.7739926436381541,Random Forest,XGBoost,1.0,ns,False
+test_spearmanr,-0.09042891421066644,0.9282749068435463,Random Forest,AutoGluon,1.0,ns,False
+test_spearmanr,-0.8609323560159263,0.39346860733303823,XGBoost,AutoGluon,1.0,ns,False

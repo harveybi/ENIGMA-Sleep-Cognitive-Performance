@@ -1,0 +1,190 @@
+# The environment
+universe       = vanilla
+getenv         = True
+request_memory = 2GB
+request_disk   = 1GB
+request_cpus   = 1
+
+# Execution
+executable = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/Pitts/run_SHAP-IQ_AutoGluon_Pitts.sh
+
+arguments = Sleep Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Stroop_Sleep.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Stroop_Sleep.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Stroop_Sleep.err
+Queue
+
+arguments = Cov Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Stroop_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Stroop_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Stroop_Cov.err
+Queue
+
+arguments = Sleep_Cov Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Stroop_Sleep_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Stroop_Sleep_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Stroop_Sleep_Cov.err
+Queue
+
+arguments = Sleep_Shuffle_Cov Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Stroop_Sleep_Shuffle_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Stroop_Sleep_Shuffle_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Stroop_Sleep_Shuffle_Cov.err
+Queue
+
+arguments = Brain Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Stroop_Brain.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Stroop_Brain.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Stroop_Brain.err
+Queue
+
+arguments = Sleep_Cov_Brain Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Stroop_Sleep_Cov_Brain.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Stroop_Sleep_Cov_Brain.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Stroop_Sleep_Cov_Brain.err
+Queue
+
+arguments = Sleep_Cov_Brain_Shuffle Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Stroop_Sleep_Cov_Brain_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Stroop_Sleep_Cov_Brain_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Stroop_Sleep_Cov_Brain_Shuffle.err
+Queue
+
+arguments = Sleep_APOE Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Stroop_Sleep_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Stroop_Sleep_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Stroop_Sleep_APOE.err
+Queue
+
+arguments = Sleep_APOE_Shuffle Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Stroop_Sleep_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Stroop_Sleep_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Stroop_Sleep_APOE_Shuffle.err
+Queue
+
+arguments = Sleep_Cov_APOE Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Stroop_Sleep_Cov_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Stroop_Sleep_Cov_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Stroop_Sleep_Cov_APOE.err
+Queue
+
+arguments = Sleep_Cov_APOE_Shuffle Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Stroop_Sleep_Cov_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Stroop_Sleep_Cov_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Stroop_Sleep_Cov_APOE_Shuffle.err
+Queue
+
+arguments = Sleep_Cov_Brain_APOE Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Stroop_Sleep_Cov_Brain_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Stroop_Sleep_Cov_Brain_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Stroop_Sleep_Cov_Brain_APOE.err
+Queue
+
+arguments = Sleep_Cov_Brain_APOE_Shuffle Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Stroop_Sleep_Cov_Brain_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Stroop_Sleep_Cov_Brain_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Stroop_Sleep_Cov_Brain_APOE_Shuffle.err
+Queue
+
+arguments = Sleep Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Memory_Sleep.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Memory_Sleep.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Memory_Sleep.err
+Queue
+
+arguments = Cov Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Memory_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Memory_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Memory_Cov.err
+Queue
+
+arguments = Sleep_Cov Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Memory_Sleep_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Memory_Sleep_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Memory_Sleep_Cov.err
+Queue
+
+arguments = Sleep_Shuffle_Cov Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Memory_Sleep_Shuffle_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Memory_Sleep_Shuffle_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Memory_Sleep_Shuffle_Cov.err
+Queue
+
+arguments = Brain Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Memory_Brain.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Memory_Brain.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Memory_Brain.err
+Queue
+
+arguments = Sleep_Cov_Brain Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Memory_Sleep_Cov_Brain.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Memory_Sleep_Cov_Brain.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Memory_Sleep_Cov_Brain.err
+Queue
+
+arguments = Sleep_Cov_Brain_Shuffle Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Memory_Sleep_Cov_Brain_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Memory_Sleep_Cov_Brain_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Memory_Sleep_Cov_Brain_Shuffle.err
+Queue
+
+arguments = Sleep_APOE Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Memory_Sleep_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Memory_Sleep_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Memory_Sleep_APOE.err
+Queue
+
+arguments = Sleep_APOE_Shuffle Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Memory_Sleep_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Memory_Sleep_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Memory_Sleep_APOE_Shuffle.err
+Queue
+
+arguments = Sleep_Cov_APOE Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Memory_Sleep_Cov_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Memory_Sleep_Cov_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Memory_Sleep_Cov_APOE.err
+Queue
+
+arguments = Sleep_Cov_APOE_Shuffle Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Memory_Sleep_Cov_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Memory_Sleep_Cov_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Memory_Sleep_Cov_APOE_Shuffle.err
+Queue
+
+arguments = Sleep_Cov_Brain_APOE Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Memory_Sleep_Cov_Brain_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Memory_Sleep_Cov_Brain_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Memory_Sleep_Cov_Brain_APOE.err
+Queue
+
+arguments = Sleep_Cov_Brain_APOE_Shuffle Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Memory_Sleep_Cov_Brain_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Memory_Sleep_Cov_Brain_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Memory_Sleep_Cov_Brain_APOE_Shuffle.err
+Queue
+
+arguments = Sleep_Cov Stroop_rgo_age
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Stroop_rgo_age_Sleep_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Stroop_rgo_age_Sleep_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Stroop_rgo_age_Sleep_Cov.err
+Queue
+
+arguments = Sleep_Cov_Brain Stroop_rgo_age
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Stroop_rgo_age_Sleep_Cov_Brain.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Stroop_rgo_age_Sleep_Cov_Brain.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Stroop_rgo_age_Sleep_Cov_Brain.err
+Queue
+
+arguments = Sleep_Cov Memory_rgo_age
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Memory_rgo_age_Sleep_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Memory_rgo_age_Sleep_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Memory_rgo_age_Sleep_Cov.err
+Queue
+
+arguments = Sleep_Cov_Brain Memory_rgo_age
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP-IQ/Pitts/Memory_rgo_age_Sleep_Cov_Brain.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP-IQ/Pitts/Memory_rgo_age_Sleep_Cov_Brain.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP-IQ/Pitts/Memory_rgo_age_Sleep_Cov_Brain.err
+Queue
+

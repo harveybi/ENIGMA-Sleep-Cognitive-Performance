@@ -1,0 +1,21 @@
+# The environment
+universe       = vanilla
+getenv         = True
+request_memory = 4GB
+request_disk   = 4GB
+request_cpus   = 1
+
+# Execution
+executable = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/KI/run_SHAP_AutoGluon_KI.sh
+
+arguments = Sleep_Cov Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP/KI/Memory_Sleep_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP/KI/Memory_Sleep_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP/KI/Memory_Sleep_Cov.err
+Queue
+
+arguments = Sleep_Cov Memory_rgo_age
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP/KI/Memory_rgo_age_Sleep_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP/KI/Memory_rgo_age_Sleep_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP/KI/Memory_rgo_age_Sleep_Cov.err
+Queue

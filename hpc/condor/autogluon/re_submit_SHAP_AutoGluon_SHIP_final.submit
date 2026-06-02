@@ -1,0 +1,34 @@
+# The environment
+universe       = vanilla
+getenv         = True
+request_memory = 8GB
+request_disk   = 4GB
+request_cpus   = 1
+
+# Execution
+executable = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/run_SHAP_AutoGluon_SHIP_final.sh
+
+arguments = Sleep_Cov Stroop_rgo_age
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/SHAP/Stroop_rgo_age_Sleep_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/SHAP/Stroop_rgo_age_Sleep_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/SHAP/Stroop_rgo_age_Sleep_Cov.err
+Queue
+
+arguments = Sleep_Cov_Brain Stroop_rgo_age
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/SHAP/Stroop_rgo_age_Sleep_Cov_Brain.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/SHAP/Stroop_rgo_age_Sleep_Cov_Brain.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/SHAP/Stroop_rgo_age_Sleep_Cov_Brain.err
+Queue
+
+arguments = Sleep_Cov Memory_rgo_age
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/SHAP/Memory_rgo_age_Sleep_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/SHAP/Memory_rgo_age_Sleep_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/SHAP/Memory_rgo_age_Sleep_Cov.err
+Queue
+
+arguments = Sleep_Cov_Brain Memory_rgo_age
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/SHAP/Memory_rgo_age_Sleep_Cov_Brain.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/SHAP/Memory_rgo_age_Sleep_Cov_Brain.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/SHAP/Memory_rgo_age_Sleep_Cov_Brain.err
+Queue
+

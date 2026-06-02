@@ -1,0 +1,211 @@
+metric,t-stat,p-val,model_1,model_2,p-val-corrected,significance
+test_r2,-0.4464566552707822,0.6572343157520145,Linear Regression,Ridge Regression,1.0,ns
+test_r2,1.6487844186220353,0.10558956649185255,Linear Regression,SVM-linear,1.0,ns
+test_r2,1.4132310564805681,0.1639090981356162,Linear Regression,SVM-rbf,1.0,ns
+test_r2,1.2219476699613576,0.22757339335415946,Linear Regression,Random Forest,1.0,ns
+test_r2,0.30712466434311225,0.7599083629713663,Linear Regression,XGBoost,1.0,ns
+test_r2,0.24817298741404886,0.8049248355531775,Linear Regression,AutoGluon,1.0,ns
+test_r2,1.6563607817356534,0.10403961568250683,Ridge Regression,SVM-linear,1.0,ns
+test_r2,1.4195145249731587,0.1620798563151999,Ridge Regression,SVM-rbf,1.0,ns
+test_r2,1.2247932103845147,0.2265086860034922,Ridge Regression,Random Forest,1.0,ns
+test_r2,0.3084228851100937,0.7589257342575968,Ridge Regression,XGBoost,1.0,ns
+test_r2,0.2494364055033252,0.8039524595657058,Ridge Regression,AutoGluon,1.0,ns
+test_r2,-0.5780994228611626,0.5658444900816324,SVM-linear,SVM-rbf,1.0,ns
+test_r2,-0.43563949797726587,0.665011437997324,SVM-linear,Random Forest,1.0,ns
+test_r2,-0.470517055596905,0.6398462910120934,SVM-linear,XGBoost,1.0,ns
+test_r2,-0.568736026007057,0.5718504342129667,SVM-linear,AutoGluon,1.0,ns
+test_r2,-0.29870926431202777,0.766425056285545,SVM-rbf,Random Forest,1.0,ns
+test_r2,-0.33105328643839665,0.7418622460673858,SVM-rbf,XGBoost,1.0,ns
+test_r2,-0.41850498482474907,0.6772076734101583,SVM-rbf,AutoGluon,1.0,ns
+test_r2,-0.15939881827651445,0.8739385908211033,Random Forest,XGBoost,1.0,ns
+test_r2,-0.22658226441526774,0.8215886063876567,Random Forest,AutoGluon,1.0,ns
+test_r2,-0.33867421589617663,0.7363021951970983,XGBoost,AutoGluon,1.0,ns
+train_r2,21.266678757793485,2.158031545484157e-26,Linear Regression,Ridge Regression,4.53186624551673e-25,****
+train_r2,14.380928837532162,3.2702570746183275e-19,Linear Regression,SVM-linear,6.867539856698488e-18,****
+train_r2,4.233400361234179,0.0001007592588215989,Linear Regression,SVM-rbf,0.002115944435253577,**
+train_r2,-17.23966822943034,1.916342651629076e-22,Linear Regression,Random Forest,4.024319568421059e-21,****
+train_r2,25.750135029327502,2.300674532745881e-32,Linear Regression,XGBoost,4.83141651876635e-31,****
+train_r2,25.750135029327502,2.300674532745881e-32,Linear Regression,AutoGluon,4.83141651876635e-31,****
+train_r2,14.380748893318577,3.2718859539653087e-19,Ridge Regression,SVM-linear,6.870960503327149e-18,****
+train_r2,4.233291535251198,0.00010079492553757064,Ridge Regression,SVM-rbf,0.0021166934362889835,**
+train_r2,-17.239706216518123,1.91616446623742e-22,Ridge Regression,Random Forest,4.0239453790985815e-21,****
+train_r2,25.750133976606275,2.300679316563082e-32,Ridge Regression,XGBoost,4.831426564782472e-31,****
+train_r2,25.750133976606275,2.300679316563082e-32,Ridge Regression,AutoGluon,4.831426564782472e-31,****
+train_r2,-4.11510046266608,0.00014773044435532204,SVM-linear,SVM-rbf,0.003102339331461763,**
+train_r2,-20.214931768861714,2.0187765335403977e-25,SVM-linear,Random Forest,4.239430720434835e-24,****
+train_r2,18.90434561495713,9.980665238971099e-26,SVM-linear,XGBoost,2.095939700183931e-24,****
+train_r2,18.90434561495713,9.980665238971099e-26,SVM-linear,AutoGluon,2.095939700183931e-24,****
+train_r2,-16.4492594434414,1.3705829090046841e-21,SVM-rbf,Random Forest,2.878224108909837e-20,****
+train_r2,17.16397764228729,9.489197887398031e-24,SVM-rbf,XGBoost,1.9927315563535866e-22,****
+train_r2,17.16397764228729,9.489197887398031e-24,SVM-rbf,AutoGluon,1.9927315563535866e-22,****
+train_r2,29.50807488391514,2.1101108034460477e-35,Random Forest,XGBoost,4.4312326872367e-34,****
+train_r2,29.50807488391514,2.1101108034460477e-35,Random Forest,AutoGluon,4.4312326872367e-34,****
+train_r2,,,XGBoost,AutoGluon,,ns
+test_neg_mean_absolute_error,-1.9809557816035788,0.053223349313986826,Linear Regression,Ridge Regression,1.0,ns
+test_neg_mean_absolute_error,-2.0718562374737566,0.043563685594183645,Linear Regression,SVM-linear,0.9148373974778565,ns
+test_neg_mean_absolute_error,-1.8849708244710361,0.06537128485278473,Linear Regression,SVM-rbf,1.0,ns
+test_neg_mean_absolute_error,1.2973612152568201,0.20058202413902754,Linear Regression,Random Forest,1.0,ns
+test_neg_mean_absolute_error,-42.180997132406276,1.4161608699140795e-43,Linear Regression,XGBoost,2.973937826819567e-42,****
+test_neg_mean_absolute_error,0.9180672489575078,0.3625922539700489,Linear Regression,AutoGluon,1.0,ns
+test_neg_mean_absolute_error,-2.0684028350078076,0.0439007098159424,Ridge Regression,SVM-linear,0.9219149061347904,ns
+test_neg_mean_absolute_error,-1.8806418073951983,0.06597071691651744,Ridge Regression,SVM-rbf,1.0,ns
+test_neg_mean_absolute_error,1.3074227529679858,0.19717086791861835,Ridge Regression,Random Forest,1.0,ns
+test_neg_mean_absolute_error,-42.179877570013325,1.4181687299035745e-43,Ridge Regression,XGBoost,2.978154332797507e-42,****
+test_neg_mean_absolute_error,0.9197104837616116,0.36174033001535155,Ridge Regression,AutoGluon,1.0,ns
+test_neg_mean_absolute_error,0.5736298290806485,0.5688419942212097,SVM-linear,SVM-rbf,1.0,ns
+test_neg_mean_absolute_error,2.589409564398433,0.0126232516582094,SVM-linear,Random Forest,0.26508828482239744,ns
+test_neg_mean_absolute_error,-41.89536245074832,2.0351602442400784e-43,SVM-linear,XGBoost,4.2738365129041646e-42,****
+test_neg_mean_absolute_error,1.3766010597641642,0.1742140065657063,SVM-linear,AutoGluon,1.0,ns
+test_neg_mean_absolute_error,2.502925123325538,0.01570070169460393,SVM-rbf,Random Forest,0.3297147355866826,ns
+test_neg_mean_absolute_error,-40.97440852612553,6.657833711067075e-43,SVM-rbf,XGBoost,1.3981450793240856e-41,****
+test_neg_mean_absolute_error,1.3091970462841065,0.195910961726077,SVM-rbf,AutoGluon,1.0,ns
+test_neg_mean_absolute_error,-39.92426847330003,2.6526313476104944e-42,Random Forest,XGBoost,5.570525829982038e-41,****
+test_neg_mean_absolute_error,0.6654739868866678,0.5085286684772548,Random Forest,AutoGluon,1.0,ns
+test_neg_mean_absolute_error,25.66238373881436,4.5731320634996614e-30,XGBoost,AutoGluon,9.603577333349289e-29,****
+train_neg_mean_absolute_error,-8.07460657269896,1.4696045368119135e-10,Linear Regression,Ridge Regression,3.0861695273050183e-09,****
+train_neg_mean_absolute_error,-13.97460021193913,1.0168706994027793e-18,Linear Regression,SVM-linear,2.1354284687458366e-17,****
+train_neg_mean_absolute_error,-11.882078074901392,4.858091624826041e-16,Linear Regression,SVM-rbf,1.0201992412134686e-14,****
+train_neg_mean_absolute_error,-19.928181208104984,3.7738748729740438e-25,Linear Regression,Random Forest,7.925137233245492e-24,****
+train_neg_mean_absolute_error,-106.57390803141982,2.052475872407589e-65,Linear Regression,XGBoost,4.310199332055937e-64,****
+train_neg_mean_absolute_error,-106.57390803141982,2.052475872407589e-65,Linear Regression,AutoGluon,4.310199332055937e-64,****
+train_neg_mean_absolute_error,-13.972768115698967,1.0221320265252832e-18,Ridge Regression,SVM-linear,2.1464772557030948e-17,****
+train_neg_mean_absolute_error,-11.876783165296407,4.938028112874557e-16,Ridge Regression,SVM-rbf,1.036985903703657e-14,****
+train_neg_mean_absolute_error,-19.920995971143885,3.8338488672163646e-25,Ridge Regression,Random Forest,8.051082621154366e-24,****
+train_neg_mean_absolute_error,-106.60453147338137,2.0204493029630387e-65,Ridge Regression,XGBoost,4.2429435362223815e-64,****
+train_neg_mean_absolute_error,-106.60453147338137,2.0204493029630387e-65,Ridge Regression,AutoGluon,4.2429435362223815e-64,****
+train_neg_mean_absolute_error,-4.031180288944988,0.00019329777800436624,SVM-linear,SVM-rbf,0.0040592533380916914,**
+train_neg_mean_absolute_error,-13.912179628160736,1.2126282019674303e-18,SVM-linear,Random Forest,2.5465192241316036e-17,****
+train_neg_mean_absolute_error,-119.21032619818749,4.437840569519417e-68,SVM-linear,XGBoost,9.319465195990777e-67,****
+train_neg_mean_absolute_error,-119.21032619818749,4.437840569519417e-68,SVM-linear,AutoGluon,9.319465195990777e-67,****
+train_neg_mean_absolute_error,-10.870547832869233,1.1721627700496908e-14,SVM-rbf,Random Forest,2.4615418171043507e-13,****
+train_neg_mean_absolute_error,-111.97075989470197,1.3729139926624255e-66,SVM-rbf,XGBoost,2.8831193845910936e-65,****
+train_neg_mean_absolute_error,-111.97075989470197,1.3729139926624255e-66,SVM-rbf,AutoGluon,2.8831193845910936e-65,****
+train_neg_mean_absolute_error,-100.88591158145938,4.1289951195674294e-64,Random Forest,XGBoost,8.670889751091601e-63,****
+train_neg_mean_absolute_error,-100.88591158145938,4.1289951195674294e-64,Random Forest,AutoGluon,8.670889751091601e-63,****
+train_neg_mean_absolute_error,,,XGBoost,AutoGluon,,ns
+test_neg_root_mean_squared_error,-0.30164672425645167,0.7641979096745559,Linear Regression,Ridge Regression,1.0,ns
+test_neg_root_mean_squared_error,1.7775510787503017,0.08168408380273387,Linear Regression,SVM-linear,1.0,ns
+test_neg_root_mean_squared_error,1.5531896326123797,0.12681353462917005,Linear Regression,SVM-rbf,1.0,ns
+test_neg_root_mean_squared_error,1.272396453563738,0.20923727188710628,Linear Regression,Random Forest,1.0,ns
+test_neg_root_mean_squared_error,-22.222345174375086,3.7778643309673955e-29,Linear Regression,XGBoost,7.93351509503153e-28,****
+test_neg_root_mean_squared_error,0.5515254929610622,0.5835074127591225,Linear Regression,AutoGluon,1.0,ns
+test_neg_root_mean_squared_error,1.7847658761706842,0.0804906288905468,Ridge Regression,SVM-linear,1.0,ns
+test_neg_root_mean_squared_error,1.5591242800728031,0.12540302050141605,Ridge Regression,SVM-rbf,1.0,ns
+test_neg_root_mean_squared_error,1.2746985145586465,0.2084276592036187,Ridge Regression,Random Forest,1.0,ns
+test_neg_root_mean_squared_error,-22.22038415180288,3.794431647793789e-29,Ridge Regression,XGBoost,7.968306460366956e-28,****
+test_neg_root_mean_squared_error,0.5516229729304809,0.5834410686931097,Ridge Regression,AutoGluon,1.0,ns
+test_neg_root_mean_squared_error,-0.595104415092561,0.55451218433593,SVM-linear,SVM-rbf,1.0,ns
+test_neg_root_mean_squared_error,-0.5547008068156722,0.5816226059702885,SVM-linear,Random Forest,1.0,ns
+test_neg_root_mean_squared_error,-22.130144711330423,4.642388407420597e-29,SVM-linear,XGBoost,9.749015655583254e-28,****
+test_neg_root_mean_squared_error,0.3718200903465402,0.7114555095292332,SVM-linear,AutoGluon,1.0,ns
+test_neg_root_mean_squared_error,-0.42459554316660936,0.6729901375589813,SVM-rbf,Random Forest,1.0,ns
+test_neg_root_mean_squared_error,-21.888244279493275,7.997831482103767e-29,SVM-rbf,XGBoost,1.6795446112417913e-27,****
+test_neg_root_mean_squared_error,0.3949457918754422,0.6944104347028146,SVM-rbf,AutoGluon,1.0,ns
+test_neg_root_mean_squared_error,-21.920757839955147,7.431897141060486e-29,Random Forest,XGBoost,1.560698399622702e-27,****
+test_neg_root_mean_squared_error,0.44981209014816337,0.6546137960428831,Random Forest,AutoGluon,1.0,ns
+test_neg_root_mean_squared_error,13.378356182350602,5.574225155349777e-18,XGBoost,AutoGluon,1.1705872826234532e-16,****
+train_neg_root_mean_squared_error,18.727079213117488,5.61135151752894e-24,Linear Regression,Ridge Regression,1.1783838186810773e-22,****
+train_neg_root_mean_squared_error,12.91728261519091,2.1421198781788252e-17,Linear Regression,SVM-linear,4.498451744175533e-16,****
+train_neg_root_mean_squared_error,4.273057574094237,8.854725414200066e-05,Linear Regression,SVM-rbf,0.0018594923369820138,**
+train_neg_root_mean_squared_error,-14.982876508046905,6.317281372448737e-20,Linear Regression,Random Forest,1.3266290882142348e-18,****
+train_neg_root_mean_squared_error,-73.18944701856155,1.6797022265220282e-56,Linear Regression,XGBoost,3.527374675696259e-55,****
+train_neg_root_mean_squared_error,-73.18944701856155,1.6797022265220282e-56,Linear Regression,AutoGluon,3.527374675696259e-55,****
+train_neg_root_mean_squared_error,12.917145098851146,2.1429887533656993e-17,Ridge Regression,SVM-linear,4.500276382067969e-16,****
+train_neg_root_mean_squared_error,4.2729477182863,8.857900545463813e-05,Ridge Regression,SVM-rbf,0.0018601591145474008,**
+train_neg_root_mean_squared_error,-14.982903616860497,6.316819714869323e-20,Ridge Regression,Random Forest,1.3265321401225577e-18,****
+train_neg_root_mean_squared_error,-73.18945547264833,1.6796916619079855e-56,Ridge Regression,XGBoost,3.5273524900067695e-55,****
+train_neg_root_mean_squared_error,-73.18945547264833,1.6796916619079855e-56,Ridge Regression,AutoGluon,3.5273524900067695e-55,****
+train_neg_root_mean_squared_error,-4.092715518591105,0.00015874791128031406,SVM-linear,SVM-rbf,0.003333706136886595,**
+train_neg_root_mean_squared_error,-16.873542518926747,4.728330290758031e-22,SVM-linear,Random Forest,9.929493610591866e-21,****
+train_neg_root_mean_squared_error,-69.37352253274,3.0957782233429254e-55,SVM-linear,XGBoost,6.501134269020144e-54,****
+train_neg_root_mean_squared_error,-69.37352253274,3.0957782233429254e-55,SVM-linear,AutoGluon,6.501134269020144e-54,****
+train_neg_root_mean_squared_error,-14.672939277223003,1.4650580595497866e-19,SVM-rbf,Random Forest,3.076621925054552e-18,****
+train_neg_root_mean_squared_error,-68.55299384135691,5.912623119942959e-55,SVM-rbf,XGBoost,1.2416508551880216e-53,****
+train_neg_root_mean_squared_error,-68.55299384135691,5.912623119942959e-55,SVM-rbf,AutoGluon,1.2416508551880216e-53,****
+train_neg_root_mean_squared_error,-68.04058784662392,8.89075347005764e-55,Random Forest,XGBoost,1.8670582287121046e-53,****
+train_neg_root_mean_squared_error,-68.04058784662392,8.89075347005764e-55,Random Forest,AutoGluon,1.8670582287121046e-53,****
+train_neg_root_mean_squared_error,,,XGBoost,AutoGluon,,ns
+test_r_corr,-0.1329940852873037,0.8947427354175637,Linear Regression,Ridge Regression,1.0,ns
+test_r_corr,0.35948041843935,0.7207803502638324,Linear Regression,SVM-linear,1.0,ns
+test_r_corr,-0.11010828280753583,0.9127732362732004,Linear Regression,SVM-rbf,1.0,ns
+test_r_corr,1.3599695044078528,0.18006427369963954,Linear Regression,Random Forest,1.0,ns
+test_r_corr,0.22261491870632097,0.8246598759514656,Linear Regression,XGBoost,1.0,ns
+test_r_corr,0.11586570886171327,0.9081809893035677,Linear Regression,AutoGluon,1.0,ns
+test_r_corr,0.36105566920226084,0.7196099006703762,Ridge Regression,SVM-linear,1.0,ns
+test_r_corr,-0.10994452091730682,0.9129024341002862,Ridge Regression,SVM-rbf,1.0,ns
+test_r_corr,1.3600644467377447,0.18003442757626567,Ridge Regression,Random Forest,1.0,ns
+test_r_corr,0.22267438214993043,0.8246138225982536,Ridge Regression,XGBoost,1.0,ns
+test_r_corr,0.1159258879984328,0.9081335167379466,Ridge Regression,AutoGluon,1.0,ns
+test_r_corr,-0.32168324618223115,0.749060960298469,SVM-linear,SVM-rbf,1.0,ns
+test_r_corr,1.1673931578252672,0.24870112518258486,SVM-linear,Random Forest,1.0,ns
+test_r_corr,0.1863646335538205,0.8528445215707352,SVM-linear,XGBoost,1.0,ns
+test_r_corr,0.07723698400047466,0.9387153159392974,SVM-linear,AutoGluon,1.0,ns
+test_r_corr,1.5652472197723557,0.12396099208050455,SVM-rbf,Random Forest,1.0,ns
+test_r_corr,0.2609825752254087,0.7950806968405094,SVM-rbf,XGBoost,1.0,ns
+test_r_corr,0.15523466548067277,0.8772046337540446,SVM-rbf,AutoGluon,1.0,ns
+test_r_corr,-0.2710694715278635,0.7873523767639162,Random Forest,XGBoost,1.0,ns
+test_r_corr,-0.3763132079901792,0.7081318547747226,Random Forest,AutoGluon,1.0,ns
+test_r_corr,-0.5247626778423152,0.6021144290839605,XGBoost,AutoGluon,1.0,ns
+train_r_corr,14.970096148811747,6.53879181188597e-20,Linear Regression,Ridge Regression,1.3731462804960537e-18,****
+train_r_corr,3.220307372290902,0.002275555199069191,Linear Regression,SVM-linear,0.047786659180453016,*
+train_r_corr,-4.205166589317422,0.00011043624520207677,Linear Regression,SVM-rbf,0.002319161149243612,**
+train_r_corr,-18.23426229121368,1.7650043889528747e-23,Linear Regression,Random Forest,3.706509216801037e-22,****
+train_r_corr,51.62463014729862,2.772953929487576e-48,Linear Regression,XGBoost,5.82320325192391e-47,****
+train_r_corr,51.62463014729862,2.772953929487576e-48,Linear Regression,AutoGluon,5.82320325192391e-47,****
+train_r_corr,3.2202645944455313,0.0022758348555505527,Ridge Regression,SVM-linear,0.04779253196656161,*
+train_r_corr,-4.205176665387377,0.00011043263556879033,Ridge Regression,SVM-rbf,0.002319085346944597,**
+train_r_corr,-18.23426594154346,1.764989255938164e-23,Ridge Regression,Random Forest,3.7064774374701447e-22,****
+train_r_corr,51.62462983559635,2.772954832043583e-48,Ridge Regression,XGBoost,5.823205147291524e-47,****
+train_r_corr,51.62462983559635,2.772954832043583e-48,Ridge Regression,AutoGluon,5.823205147291524e-47,****
+train_r_corr,-4.871842463988617,1.1989024983103205e-05,SVM-linear,SVM-rbf,0.0002517695246451673,***
+train_r_corr,-17.97291623457105,3.2717340053899805e-23,SVM-linear,Random Forest,6.870641411318959e-22,****
+train_r_corr,49.6101424174165,2.36622612679326e-47,SVM-linear,XGBoost,4.969074866265846e-46,****
+train_r_corr,49.6101424174165,2.36622612679326e-47,SVM-linear,AutoGluon,4.969074866265846e-46,****
+train_r_corr,-14.48667053687165,2.4422503371531877e-19,SVM-rbf,Random Forest,5.128725708021694e-18,****
+train_r_corr,43.0203187449098,4.944157183659349e-44,SVM-rbf,XGBoost,1.0382730085684633e-42,****
+train_r_corr,43.0203187449098,4.944157183659349e-44,SVM-rbf,AutoGluon,1.0382730085684633e-42,****
+train_r_corr,52.80389048033699,8.2022468247186e-49,Random Forest,XGBoost,1.722471833190906e-47,****
+train_r_corr,52.80389048033699,8.2022468247186e-49,Random Forest,AutoGluon,1.722471833190906e-47,****
+train_r_corr,,,XGBoost,AutoGluon,,ns
+test_spearmanr,-0.4075479022634058,0.6853807616382068,Linear Regression,Ridge Regression,1.0,ns
+test_spearmanr,-0.6730061901287423,0.5041052084144536,Linear Regression,SVM-linear,1.0,ns
+test_spearmanr,0.42129060482029757,0.6753852372424902,Linear Regression,SVM-rbf,1.0,ns
+test_spearmanr,2.2865644648322547,0.026581113248556974,Linear Regression,Random Forest,0.5582033782196965,ns
+test_spearmanr,0.43573587556808374,0.6647337999973901,Linear Regression,XGBoost,1.0,ns
+test_spearmanr,0.25293849920922623,0.801258744787507,Linear Regression,AutoGluon,1.0,ns
+test_spearmanr,-0.6645813690998418,0.5094339557371834,Ridge Regression,SVM-linear,1.0,ns
+test_spearmanr,0.4283115402397461,0.670301221305783,Ridge Regression,SVM-rbf,1.0,ns
+test_spearmanr,2.2927887914710863,0.026191884301315194,Ridge Regression,Random Forest,0.550029570327619,ns
+test_spearmanr,0.43775249280906936,0.6632800506312946,Ridge Regression,XGBoost,1.0,ns
+test_spearmanr,0.2547582117265402,0.7998600272903271,Ridge Regression,AutoGluon,1.0,ns
+test_spearmanr,0.9824303061581459,0.3307140327887519,SVM-linear,SVM-rbf,1.0,ns
+test_spearmanr,2.5898673989948744,0.01260853729919433,SVM-linear,Random Forest,0.2647792832830809,ns
+test_spearmanr,0.5124685942248898,0.6103750854561422,SVM-linear,XGBoost,1.0,ns
+test_spearmanr,0.3261026365295773,0.7455842865569973,SVM-linear,AutoGluon,1.0,ns
+test_spearmanr,2.266854683555438,0.0278478208545838,SVM-rbf,Random Forest,0.5848042379462598,ns
+test_spearmanr,0.32420802083412364,0.7470103343747212,SVM-rbf,XGBoost,1.0,ns
+test_spearmanr,0.14689893416209765,0.883748945102631,SVM-rbf,AutoGluon,1.0,ns
+test_spearmanr,-0.47414885249864963,0.6372707930154117,Random Forest,XGBoost,1.0,ns
+test_spearmanr,-0.6332230937920166,0.5292123155294384,Random Forest,AutoGluon,1.0,ns
+test_spearmanr,-0.8898425837933168,0.3778985440202439,XGBoost,AutoGluon,1.0,ns
+train_spearmanr,-0.8066132245713121,0.4237871652746683,Linear Regression,Ridge Regression,1.0,ns
+train_spearmanr,-4.063986601664451,0.00017406007422910024,Linear Regression,SVM-linear,0.003655261558811105,**
+train_spearmanr,-3.5222707098018917,0.0009366210266837756,Linear Regression,SVM-rbf,0.01966904156035929,*
+train_spearmanr,-23.38276628612647,3.112945200656057e-28,Linear Regression,Random Forest,6.537184921377719e-27,****
+train_spearmanr,56.68578026506358,1.7764077509150594e-50,Linear Regression,XGBoost,3.730456276921625e-49,****
+train_spearmanr,56.68578026506358,1.7764077509150594e-50,Linear Regression,AutoGluon,3.730456276921625e-49,****
+train_spearmanr,-4.055134971052391,0.00017905973371422148,Ridge Regression,SVM-linear,0.003760254407998651,**
+train_spearmanr,-3.522434690018327,0.0009361597341442554,Ridge Regression,SVM-rbf,0.019659354417029363,*
+train_spearmanr,-23.39555982890171,3.0371733585831083e-28,Ridge Regression,Random Forest,6.378064053024528e-27,****
+train_spearmanr,56.681280752445524,1.7840514870452582e-50,Ridge Regression,XGBoost,3.746508122795042e-49,****
+train_spearmanr,56.681280752445524,1.7840514870452582e-50,Ridge Regression,AutoGluon,3.746508122795042e-49,****
+train_spearmanr,-2.287684081283132,0.02651072211012917,SVM-linear,SVM-rbf,0.5567251643127126,ns
+train_spearmanr,-23.00271670432031,6.506455296100275e-28,SVM-linear,Random Forest,1.3663556121810578e-26,****
+train_spearmanr,58.16017261759101,4.426858735031842e-51,SVM-linear,XGBoost,9.296403343566868e-50,****
+train_spearmanr,58.16017261759101,4.426858735031842e-51,SVM-linear,AutoGluon,9.296403343566868e-50,****
+train_spearmanr,-20.77854921948889,6.023262009631875e-26,SVM-rbf,Random Forest,1.2648850220226936e-24,****
+train_spearmanr,54.80024191712232,1.1060373008658482e-49,SVM-rbf,XGBoost,2.322678331818281e-48,****
+train_spearmanr,54.80024191712232,1.1060373008658482e-49,SVM-rbf,AutoGluon,2.322678331818281e-48,****
+train_spearmanr,84.25743330607851,7.775956314635582e-60,Random Forest,XGBoost,1.6329508260734723e-58,****
+train_spearmanr,84.25743330607851,7.775956314635582e-60,Random Forest,AutoGluon,1.6329508260734723e-58,****
+train_spearmanr,,,XGBoost,AutoGluon,,ns

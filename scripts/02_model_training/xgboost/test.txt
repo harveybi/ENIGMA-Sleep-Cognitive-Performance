@@ -1,0 +1,76 @@
+
+Starting XGBoost pipeline for Stroop_rgo_age prediction with feature combination Sleep_Cov.
+
+PSG_Sleep_Dur already in hours
+Self_Sleep_Dur already in hours
+PSG_Sleep_Eff already in percentage
+Self_Sleep_Eff already in percentage
+Age Groups: ['60-81' '21-47' '48-59']
+Age and SEX Groups: ['60-81_F' '21-47_M' '48-59_M' '60-81_M' '21-47_F' '48-59_F']
+PSG_Sleep_Dur converted to hours
+Self_Sleep_Dur converted to hours
+PSG_Sleep_Eff converted to percentage
+Self_Sleep_Eff converted to percentage
+PSG_Sleep_Dur converted to hours
+Self_Sleep_Dur converted to hours
+PSG_Sleep_Eff converted to percentage
+Self_Sleep_Eff converted to percentage
+PSG_Sleep_Dur converted to hours
+Self_Sleep_Dur converted to hours
+PSG_Sleep_Eff converted to percentage
+Self_Sleep_Eff converted to percentage
+PSG_Sleep_Dur converted to hours
+Self_Sleep_Dur already in hours
+PSG_Sleep_Eff converted to percentage
+Self_Sleep_Eff already in percentage
+Age Groups: ['63-81' '21-50' '51-62']
+Age and SEX Groups: ['63-81_F' '21-50_M' '51-62_M' '63-81_M' '21-50_F' '51-62_F']
+
+Start model training
+
+<class 'pandas.core.frame.DataFrame'>
+<class 'pandas.core.frame.DataFrame'>
+
+
+<class 'sklearn.compose._column_transformer.ColumnTransformer'>
+
+X_train transformed successfully
+X_test transformed successfully
+
+Starting XGBoost pipeline for Stroop_rgo_age prediction with feature combination Sleep_Cov.
+
+PSG_Sleep_Dur already in hours
+Self_Sleep_Dur already in hours
+PSG_Sleep_Eff already in percentage
+Self_Sleep_Eff already in percentage
+Age Groups: ['60-81' '21-47' '48-59']
+Age and SEX Groups: ['60-81_F' '21-47_M' '48-59_M' '60-81_M' '21-47_F' '48-59_F']
+PSG_Sleep_Dur converted to hours
+Self_Sleep_Dur converted to hours
+PSG_Sleep_Eff converted to percentage
+Self_Sleep_Eff converted to percentage
+PSG_Sleep_Dur converted to hours
+Self_Sleep_Dur converted to hours
+PSG_Sleep_Eff converted to percentage
+Self_Sleep_Eff converted to percentage
+PSG_Sleep_Dur converted to hours
+Self_Sleep_Dur converted to hours
+PSG_Sleep_Eff converted to percentage
+Self_Sleep_Eff converted to percentage
+PSG_Sleep_Dur converted to hours
+Self_Sleep_Dur already in hours
+PSG_Sleep_Eff converted to percentage
+Self_Sleep_Eff already in percentage
+Age Groups: ['63-81' '21-50' '51-62']
+Age and SEX Groups: ['63-81_F' '21-50_M' '51-62_M' '63-81_M' '21-50_F' '51-62_F']
+
+Start model training
+
+<class 'pandas.core.frame.DataFrame'>
+<class 'pandas.core.frame.DataFrame'>
+
+
+<class 'sklearn.compose._column_transformer.ColumnTransformer'>
+
+X_train transformed successfully
+Error during transforming X_test: 'dict' object has no attribute 'transform'

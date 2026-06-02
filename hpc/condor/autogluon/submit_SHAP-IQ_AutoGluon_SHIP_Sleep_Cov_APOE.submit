@@ -1,0 +1,33 @@
+# The environment
+universe       = vanilla
+getenv         = True
+request_memory = 2GB
+request_disk   = 1GB
+request_cpus   = 1
+
+# Execution
+executable = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/run_SHAP-IQ_AutoGluon_SHIP_htcondor.sh
+
+arguments = Sleep_Cov_APOE Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/SHAP-IQ/Stroop_Sleep_Cov_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/SHAP-IQ/Stroop_Sleep_Cov_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/SHAP-IQ/Stroop_Sleep_Cov_APOE.err
+Queue
+
+arguments = Sleep_Cov_APOE_Shuffle Stroop
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/SHAP-IQ/Stroop_Sleep_Cov_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/SHAP-IQ/Stroop_Sleep_Cov_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/SHAP-IQ/Stroop_Sleep_Cov_APOE_Shuffle.err
+Queue
+
+arguments = Sleep_Cov_APOE Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/SHAP-IQ/Memory_Sleep_Cov_APOE.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/SHAP-IQ/Memory_Sleep_Cov_APOE.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/SHAP-IQ/Memory_Sleep_Cov_APOE.err
+Queue
+
+arguments = Sleep_Cov_APOE_Shuffle Memory
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_logs/SHIP/SHAP-IQ/Memory_Sleep_Cov_APOE_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_outputs/SHIP/SHAP-IQ/Memory_Sleep_Cov_APOE_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/AutoGluon/condor_errors/SHIP/SHAP-IQ/Memory_Sleep_Cov_APOE_Shuffle.err
+Queue

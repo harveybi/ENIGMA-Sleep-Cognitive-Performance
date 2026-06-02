@@ -1,0 +1,460 @@
+# The environment
+universe       = vanilla
+getenv         = True
+request_memory = 64GB
+request_disk   = 10GB
+request_cpus   = 4
+
+# Execution
+executable = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/run_ridge_Liege_Stroop_WM.sh
+
+arguments = Sleep Stroop 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Stroop_Sleep.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Stroop_Sleep.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Stroop_Sleep.err
+Queue
+
+arguments = Cov Stroop 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Stroop_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Stroop_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Stroop_Cov.err
+Queue
+
+arguments = Sleep_Cov Stroop 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Stroop_Sleep_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Stroop_Sleep_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Stroop_Sleep_Cov.err
+Queue
+
+arguments = Sleep_Cov_Brain Stroop 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Stroop_Sleep_Cov_Brain.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Stroop_Sleep_Cov_Brain.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Stroop_Sleep_Cov_Brain.err
+Queue
+
+arguments = Sleep_Cov_CT Stroop 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Stroop_Sleep_Cov_CT.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Stroop_Sleep_Cov_CT.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Stroop_Sleep_Cov_CT.err
+Queue
+
+arguments = Sleep_Cov_SA Stroop 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Stroop_Sleep_Cov_SA.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Stroop_Sleep_Cov_SA.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Stroop_Sleep_Cov_SA.err
+Queue
+
+arguments = Sleep_Cov_Subcor Stroop 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Stroop_Sleep_Cov_Subcor.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Stroop_Sleep_Cov_Subcor.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Stroop_Sleep_Cov_Subcor.err
+Queue
+
+arguments = Cov_Brain Stroop 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Stroop_Cov_Brain.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Stroop_Cov_Brain.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Stroop_Cov_Brain.err
+Queue
+
+arguments = Cov_CT Stroop 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Stroop_Cov_CT.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Stroop_Cov_CT.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Stroop_Cov_CT.err
+Queue
+
+arguments = Cov_SA Stroop 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Stroop_Cov_SA.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Stroop_Cov_SA.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Stroop_Cov_SA.err
+Queue
+
+arguments = Cov_Subcor Stroop 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Stroop_Cov_Subcor.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Stroop_Cov_Subcor.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Stroop_Cov_Subcor.err
+Queue
+
+arguments = Sleep_Shuffle_Cov Stroop 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Stroop_Sleep_Shuffle_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Stroop_Sleep_Shuffle_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Stroop_Sleep_Shuffle_Cov.err
+Queue
+
+arguments = Sleep_Cov_Subcor_Shuffle Stroop 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Stroop_Sleep_Cov_Subcor_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Stroop_Sleep_Cov_Subcor_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Stroop_Sleep_Cov_Subcor_Shuffle.err
+Queue
+
+arguments = Cov_Brain_Shuffle Stroop 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Stroop_Cov_Brain_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Stroop_Cov_Brain_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Stroop_Cov_Brain_Shuffle.err
+Queue
+
+arguments = Cov_Subcor_Shuffle Stroop 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Stroop_Cov_Subcor_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Stroop_Cov_Subcor_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Stroop_Cov_Subcor_Shuffle.err
+Queue
+
+arguments = Sleep Memory 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Memory_Sleep.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Memory_Sleep.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Memory_Sleep.err
+Queue
+
+arguments = Cov Memory 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Memory_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Memory_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Memory_Cov.err
+Queue
+
+arguments = Sleep_Cov Memory 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Memory_Sleep_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Memory_Sleep_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Memory_Sleep_Cov.err
+Queue
+
+arguments = Sleep_Cov_Brain Memory 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Memory_Sleep_Cov_Brain.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Memory_Sleep_Cov_Brain.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Memory_Sleep_Cov_Brain.err
+Queue
+
+arguments = Sleep_Cov_CT Memory 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Memory_Sleep_Cov_CT.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Memory_Sleep_Cov_CT.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Memory_Sleep_Cov_CT.err
+Queue
+
+arguments = Sleep_Cov_SA Memory 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Memory_Sleep_Cov_SA.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Memory_Sleep_Cov_SA.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Memory_Sleep_Cov_SA.err
+Queue
+
+arguments = Sleep_Cov_Subcor Memory 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Memory_Sleep_Cov_Subcor.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Memory_Sleep_Cov_Subcor.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Memory_Sleep_Cov_Subcor.err
+Queue
+
+arguments = Cov_Brain Memory 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Memory_Cov_Brain.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Memory_Cov_Brain.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Memory_Cov_Brain.err
+Queue
+
+arguments = Cov_CT Memory 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Memory_Cov_CT.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Memory_Cov_CT.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Memory_Cov_CT.err
+Queue
+
+arguments = Cov_SA Memory 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Memory_Cov_SA.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Memory_Cov_SA.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Memory_Cov_SA.err
+Queue
+
+arguments = Cov_Subcor Memory 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Memory_Cov_Subcor.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Memory_Cov_Subcor.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Memory_Cov_Subcor.err
+Queue
+
+arguments = Sleep_Shuffle_Cov Memory 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Memory_Sleep_Shuffle_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Memory_Sleep_Shuffle_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Memory_Sleep_Shuffle_Cov.err
+Queue
+
+arguments = Sleep_Cov_Subcor_Shuffle Memory 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Memory_Sleep_Cov_Subcor_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Memory_Sleep_Cov_Subcor_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Memory_Sleep_Cov_Subcor_Shuffle.err
+Queue
+
+arguments = Cov_Brain_Shuffle Memory 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Memory_Cov_Brain_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Memory_Cov_Brain_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Memory_Cov_Brain_Shuffle.err
+Queue
+
+arguments = Cov_Subcor_Shuffle Memory 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/Memory_Cov_Subcor_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/Memory_Cov_Subcor_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/Memory_Cov_Subcor_Shuffle.err
+Queue
+
+arguments = Sleep 1-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/1-back_Sleep.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/1-back_Sleep.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/1-back_Sleep.err
+Queue
+
+arguments = Cov 1-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/1-back_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/1-back_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/1-back_Cov.err
+Queue
+
+arguments = Sleep_Cov 1-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/1-back_Sleep_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/1-back_Sleep_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/1-back_Sleep_Cov.err
+Queue
+
+arguments = Sleep_Cov_Brain 1-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/1-back_Sleep_Cov_Brain.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/1-back_Sleep_Cov_Brain.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/1-back_Sleep_Cov_Brain.err
+Queue
+
+arguments = Sleep_Cov_CT 1-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/1-back_Sleep_Cov_CT.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/1-back_Sleep_Cov_CT.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/1-back_Sleep_Cov_CT.err
+Queue
+
+arguments = Sleep_Cov_SA 1-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/1-back_Sleep_Cov_SA.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/1-back_Sleep_Cov_SA.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/1-back_Sleep_Cov_SA.err
+Queue
+
+arguments = Sleep_Cov_Subcor 1-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/1-back_Sleep_Cov_Subcor.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/1-back_Sleep_Cov_Subcor.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/1-back_Sleep_Cov_Subcor.err
+Queue
+
+arguments = Cov_Brain 1-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/1-back_Cov_Brain.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/1-back_Cov_Brain.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/1-back_Cov_Brain.err
+Queue
+
+arguments = Cov_CT 1-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/1-back_Cov_CT.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/1-back_Cov_CT.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/1-back_Cov_CT.err
+Queue
+
+arguments = Cov_SA 1-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/1-back_Cov_SA.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/1-back_Cov_SA.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/1-back_Cov_SA.err
+Queue
+
+arguments = Cov_Subcor 1-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/1-back_Cov_Subcor.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/1-back_Cov_Subcor.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/1-back_Cov_Subcor.err
+Queue
+
+arguments = Sleep_Shuffle_Cov 1-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/1-back_Sleep_Shuffle_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/1-back_Sleep_Shuffle_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/1-back_Sleep_Shuffle_Cov.err
+Queue
+
+arguments = Sleep_Cov_Subcor_Shuffle 1-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/1-back_Sleep_Cov_Subcor_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/1-back_Sleep_Cov_Subcor_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/1-back_Sleep_Cov_Subcor_Shuffle.err
+Queue
+
+arguments = Cov_Brain_Shuffle 1-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/1-back_Cov_Brain_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/1-back_Cov_Brain_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/1-back_Cov_Brain_Shuffle.err
+Queue
+
+arguments = Cov_Subcor_Shuffle 1-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/1-back_Cov_Subcor_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/1-back_Cov_Subcor_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/1-back_Cov_Subcor_Shuffle.err
+Queue
+
+arguments = Sleep 2-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/2-back_Sleep.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/2-back_Sleep.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/2-back_Sleep.err
+Queue
+
+arguments = Cov 2-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/2-back_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/2-back_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/2-back_Cov.err
+Queue
+
+arguments = Sleep_Cov 2-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/2-back_Sleep_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/2-back_Sleep_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/2-back_Sleep_Cov.err
+Queue
+
+arguments = Sleep_Cov_Brain 2-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/2-back_Sleep_Cov_Brain.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/2-back_Sleep_Cov_Brain.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/2-back_Sleep_Cov_Brain.err
+Queue
+
+arguments = Sleep_Cov_CT 2-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/2-back_Sleep_Cov_CT.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/2-back_Sleep_Cov_CT.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/2-back_Sleep_Cov_CT.err
+Queue
+
+arguments = Sleep_Cov_SA 2-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/2-back_Sleep_Cov_SA.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/2-back_Sleep_Cov_SA.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/2-back_Sleep_Cov_SA.err
+Queue
+
+arguments = Sleep_Cov_Subcor 2-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/2-back_Sleep_Cov_Subcor.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/2-back_Sleep_Cov_Subcor.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/2-back_Sleep_Cov_Subcor.err
+Queue
+
+arguments = Cov_Brain 2-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/2-back_Cov_Brain.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/2-back_Cov_Brain.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/2-back_Cov_Brain.err
+Queue
+
+arguments = Cov_CT 2-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/2-back_Cov_CT.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/2-back_Cov_CT.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/2-back_Cov_CT.err
+Queue
+
+arguments = Cov_SA 2-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/2-back_Cov_SA.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/2-back_Cov_SA.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/2-back_Cov_SA.err
+Queue
+
+arguments = Cov_Subcor 2-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/2-back_Cov_Subcor.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/2-back_Cov_Subcor.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/2-back_Cov_Subcor.err
+Queue
+
+arguments = Sleep_Shuffle_Cov 2-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/2-back_Sleep_Shuffle_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/2-back_Sleep_Shuffle_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/2-back_Sleep_Shuffle_Cov.err
+Queue
+
+arguments = Sleep_Cov_Subcor_Shuffle 2-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/2-back_Sleep_Cov_Subcor_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/2-back_Sleep_Cov_Subcor_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/2-back_Sleep_Cov_Subcor_Shuffle.err
+Queue
+
+arguments = Cov_Brain_Shuffle 2-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/2-back_Cov_Brain_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/2-back_Cov_Brain_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/2-back_Cov_Brain_Shuffle.err
+Queue
+
+arguments = Cov_Subcor_Shuffle 2-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/2-back_Cov_Subcor_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/2-back_Cov_Subcor_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/2-back_Cov_Subcor_Shuffle.err
+Queue
+
+arguments = Sleep 3-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/3-back_Sleep.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/3-back_Sleep.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/3-back_Sleep.err
+Queue
+
+arguments = Cov 3-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/3-back_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/3-back_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/3-back_Cov.err
+Queue
+
+arguments = Sleep_Cov 3-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/3-back_Sleep_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/3-back_Sleep_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/3-back_Sleep_Cov.err
+Queue
+
+arguments = Sleep_Cov_Brain 3-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/3-back_Sleep_Cov_Brain.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/3-back_Sleep_Cov_Brain.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/3-back_Sleep_Cov_Brain.err
+Queue
+
+arguments = Sleep_Cov_CT 3-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/3-back_Sleep_Cov_CT.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/3-back_Sleep_Cov_CT.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/3-back_Sleep_Cov_CT.err
+Queue
+
+arguments = Sleep_Cov_SA 3-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/3-back_Sleep_Cov_SA.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/3-back_Sleep_Cov_SA.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/3-back_Sleep_Cov_SA.err
+Queue
+
+arguments = Sleep_Cov_Subcor 3-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/3-back_Sleep_Cov_Subcor.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/3-back_Sleep_Cov_Subcor.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/3-back_Sleep_Cov_Subcor.err
+Queue
+
+arguments = Cov_Brain 3-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/3-back_Cov_Brain.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/3-back_Cov_Brain.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/3-back_Cov_Brain.err
+Queue
+
+arguments = Cov_CT 3-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/3-back_Cov_CT.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/3-back_Cov_CT.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/3-back_Cov_CT.err
+Queue
+
+arguments = Cov_SA 3-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/3-back_Cov_SA.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/3-back_Cov_SA.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/3-back_Cov_SA.err
+Queue
+
+arguments = Cov_Subcor 3-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/3-back_Cov_Subcor.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/3-back_Cov_Subcor.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/3-back_Cov_Subcor.err
+Queue
+
+arguments = Sleep_Shuffle_Cov 3-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/3-back_Sleep_Shuffle_Cov.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/3-back_Sleep_Shuffle_Cov.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/3-back_Sleep_Shuffle_Cov.err
+Queue
+
+arguments = Sleep_Cov_Subcor_Shuffle 3-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/3-back_Sleep_Cov_Subcor_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/3-back_Sleep_Cov_Subcor_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/3-back_Sleep_Cov_Subcor_Shuffle.err
+Queue
+
+arguments = Cov_Brain_Shuffle 3-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/3-back_Cov_Brain_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/3-back_Cov_Brain_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/3-back_Cov_Brain_Shuffle.err
+Queue
+
+arguments = Cov_Subcor_Shuffle 3-back 4
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/Liege/3-back_Cov_Subcor_Shuffle.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/Liege/3-back_Cov_Subcor_Shuffle.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/Liege/3-back_Cov_Subcor_Shuffle.err
+Queue
+

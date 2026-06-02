@@ -1,0 +1,102 @@
+# The environment
+universe       = vanilla
+getenv         = True
+request_memory = 8GB
+request_disk   = 4GB
+request_cpus   = 1
+
+# Execution
+executable = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/Juelich/run_SHAP_AutoGluon_Juelich_no_DK.sh
+
+arguments = Brain Memory sess-1
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP_no_DK/Juelich/Memory_Brain_sess-1.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP_no_DK/Juelich/Memory_Brain_sess-1.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP_no_DK/Juelich/Memory_Brain_sess-1.err
+Queue
+
+arguments = Sleep_Cov_Brain Memory sess-1
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_sess-1.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_sess-1.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_sess-1.err
+Queue
+
+arguments = Sleep_Cov_Brain_Shuffle Memory sess-1
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_Shuffle_sess-1.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_Shuffle_sess-1.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_Shuffle_sess-1.err
+Queue
+
+# Skip APOE for now
+# arguments = Sleep_Cov_Brain_APOE Memory sess-1
+# log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_APOE_sess-1.log
+# output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_APOE_sess-1.out
+# error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_APOE_sess-1.err
+# Queue
+
+# arguments = Sleep_Cov_Brain_APOE_Shuffle Memory sess-1
+# log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_APOE_Shuffle_sess-1.log
+# output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_APOE_Shuffle_sess-1.out
+# error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_APOE_Shuffle_sess-1.err
+# Queue
+
+arguments = Brain Memory sess-2
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP_no_DK/Juelich/Memory_Brain_sess-2.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP_no_DK/Juelich/Memory_Brain_sess-2.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP_no_DK/Juelich/Memory_Brain_sess-2.err
+Queue
+
+arguments = Sleep_Cov_Brain Memory sess-2
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_sess-2.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_sess-2.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_sess-2.err
+Queue
+
+arguments = Sleep_Cov_Brain_Shuffle Memory sess-2
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_Shuffle_sess-2.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_Shuffle_sess-2.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_Shuffle_sess-2.err
+Queue
+
+# Skip APOE for now
+# arguments = Sleep_Cov_Brain_APOE Memory sess-2
+# log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_APOE_sess-2.log
+# output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_APOE_sess-2.out
+# error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_APOE_sess-2.err
+# Queue
+
+# arguments = Sleep_Cov_Brain_APOE_Shuffle Memory sess-2
+# log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_APOE_Shuffle_sess-2.log
+# output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_APOE_Shuffle_sess-2.out
+# error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_APOE_Shuffle_sess-2.err
+# Queue
+
+arguments = Brain Memory sess-SD
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP_no_DK/Juelich/Memory_Brain_sess-SD.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP_no_DK/Juelich/Memory_Brain_sess-SD.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP_no_DK/Juelich/Memory_Brain_sess-SD.err
+Queue
+
+arguments = Sleep_Cov_Brain Memory sess-SD
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_sess-SD.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_sess-SD.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_sess-SD.err
+Queue
+
+arguments = Sleep_Cov_Brain_Shuffle Memory sess-SD
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_Shuffle_sess-SD.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_Shuffle_sess-SD.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_Shuffle_sess-SD.err
+Queue
+
+# Skip APOE for now
+# arguments = Sleep_Cov_Brain_APOE Memory sess-SD
+# log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_APOE_sess-SD.log
+# output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_APOE_sess-SD.out
+# error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_APOE_sess-SD.err
+# Queue
+
+# arguments = Sleep_Cov_Brain_APOE_Shuffle Memory sess-SD
+# log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_APOE_Shuffle_sess-SD.log
+# output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_APOE_Shuffle_sess-SD.out
+# error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP_no_DK/Juelich/Memory_Sleep_Cov_Brain_APOE_Shuffle_sess-SD.err
+# Queue

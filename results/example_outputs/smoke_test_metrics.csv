@@ -1,0 +1,6 @@
+metric,value
+package_version,0.1.0
+n_train,8
+n_test,4
+r2,0.995983
+mae,0.309549

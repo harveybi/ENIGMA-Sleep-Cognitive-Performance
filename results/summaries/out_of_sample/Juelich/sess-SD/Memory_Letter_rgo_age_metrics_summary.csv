@@ -1,0 +1,5 @@
+Model,Feature Combination,Performance Test Set MAE,Performance Test Set RMSE,Performance Test Set R2,Performance Test Set Pearson r,Performance Test Set Spearman r
+AutoGluon,"Sleep, Demo",8.73,10.19,-1.09,-0.08,-0.10
+AutoGluon,"Sleep, Demo, Brain",11.87,13.59,-2.71,0.15,0.05
+XGBoost,"Sleep, Demo",9.79,11.44,-1.63,0.26,0.26
+XGBoost,"Sleep, Demo, Brain",15.40,17.05,-4.84,0.17,0.18

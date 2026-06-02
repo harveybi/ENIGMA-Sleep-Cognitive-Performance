@@ -1,0 +1,14 @@
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_Cov_Brain Stroop 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Brain Stroop 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_Cov_Brain_Shuffle Stroop 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_Cov_Brain_APOE Stroop 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_Cov_Brain_APOE_Shuffle Stroop 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_Cov_Brain Memory 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Brain Memory 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_Cov_Brain_Shuffle Memory 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_Cov_Brain_APOE Memory 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_Cov_Brain_APOE_Shuffle Memory 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_Cov_Brain Stroop_rgo_age 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_Cov Stroop_rgo_age 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_Cov_Brain Memory_rgo_age 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_Cov Memory_rgo_age 24 0

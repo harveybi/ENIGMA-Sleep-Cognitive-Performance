@@ -1,0 +1,12 @@
+input_csv: data/example/synthetic_sleep_cognition.csv
+output_dir: results/example_outputs
+target: cognitive_score
+features:
+  - age
+  - sex_binary
+  - sleep_duration
+  - sleep_efficiency
+  - brain_feature_1
+  - brain_feature_2
+random_state: 42
+

@@ -1,0 +1,27 @@
+Model,Feature Combination,Performance Test Set MAE,Performance Test Set RMSE,Performance Test Set R2,Performance Test Set Pearson r,Performance Test Set Spearman r
+AutoGluon,Sleep,20.44,22.52,-4.79,0.07,0.06
+AutoGluon,Demographic,27.46,29.10,-8.67,-0.14,-0.14
+AutoGluon,"Sleep, Demo",26.61,28.48,-8.26,-0.14,-0.09
+AutoGluon,"Sleep (Shuffled), Demo",27.35,28.88,-8.52,0.15,0.06
+AutoGluon,Brain,16.75,18.98,-3.11,0.09,0.10
+AutoGluon,"Sleep, Demo, Brain",19.37,21.42,-4.24,0.17,0.20
+AutoGluon,"Sleep (Shuffled), Demo, Brain",22.95,24.81,-6.03,0.00,0.03
+AutoGluon,"Sleep, APOE",21.67,23.80,-5.47,-0.03,0.07
+AutoGluon,"Sleep (Shuffled), APOE",19.12,21.30,-4.18,0.16,0.14
+AutoGluon,"Sleep, Demo, APOE",28.76,30.54,-9.65,-0.15,-0.08
+AutoGluon,"Sleep (Shuffled), Demo, APOE",26.75,28.73,-8.43,-0.18,-0.12
+AutoGluon,"Sleep, Demo, Brain, APOE",18.48,20.56,-3.83,0.18,0.18
+AutoGluon,"Sleep (Shuffled), Demo, Brain, APOE",19.01,21.12,-4.09,0.15,0.13
+XGBoost,Sleep,19.17,21.25,-4.16,0.15,0.16
+XGBoost,Demographic,25.42,27.19,-7.45,-0.10,-0.07
+XGBoost,"Sleep, Demo",25.85,27.71,-7.77,-0.09,-0.08
+XGBoost,"Sleep (Shuffled), Demo",21.00,22.97,-5.02,0.14,0.16
+XGBoost,Brain,14.10,16.36,-2.06,0.01,0.06
+XGBoost,"Sleep, Demo, Brain",13.88,16.19,-1.99,0.16,0.17
+XGBoost,"Sleep (Shuffled), Demo, Brain",22.25,24.22,-5.70,-0.22,-0.19
+XGBoost,"Sleep, APOE",20.27,22.34,-4.70,0.04,0.09
+XGBoost,"Sleep (Shuffled), APOE",21.71,23.83,-5.49,-0.01,0.01
+XGBoost,"Sleep, Demo, APOE",23.20,25.13,-6.21,-0.09,-0.13
+XGBoost,"Sleep (Shuffled), Demo, APOE",27.44,29.19,-8.73,-0.00,0.02
+XGBoost,"Sleep, Demo, Brain, APOE",17.90,20.24,-3.68,0.01,0.01
+XGBoost,"Sleep (Shuffled), Demo, Brain, APOE",18.47,20.66,-3.88,0.16,0.14

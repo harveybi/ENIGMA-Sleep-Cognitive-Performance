@@ -1,0 +1,16 @@
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep Stroop 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Cov Stroop 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_Cov Stroop 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_Shuffle_Cov Stroop 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_APOE Stroop 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_APOE_Shuffle Stroop 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_Cov_APOE Stroop 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_Cov_APOE_Shuffle Stroop 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep Memory 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Cov Memory 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_Cov Memory 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_Shuffle_Cov Memory 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_APOE Memory 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_APOE_Shuffle Memory 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_Cov_APOE Memory 24 0
+bash run_AutoGluon_SHIP_Stroop_NAI_no_DK.sh Sleep_Cov_APOE_Shuffle Memory 24 0

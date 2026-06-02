@@ -1,0 +1,46 @@
+# The environment
+universe       = vanilla
+getenv         = True
+request_memory = 4GB
+request_disk   = 4GB
+request_cpus   = 1
+
+# Execution
+executable = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/Juelich/run_SHAP_AutoGluon_Juelich.sh
+
+arguments = Sleep_Cov Memory sess-1
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP/Juelich/Memory_Sleep_Cov_sess-1.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP/Juelich/Memory_Sleep_Cov_sess-1.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP/Juelich/Memory_Sleep_Cov_sess-1.err
+Queue
+
+arguments = Sleep_Cov Memory_rgo_age sess-1
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP/Juelich/Memory_rgo_age_Sleep_Cov_sess-1.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP/Juelich/Memory_rgo_age_Sleep_Cov_sess-1.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP/Juelich/Memory_rgo_age_Sleep_Cov_sess-1.err
+Queue
+
+
+arguments = Sleep_Cov Memory sess-2
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP/Juelich/Memory_Sleep_Cov_sess-2.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP/Juelich/Memory_Sleep_Cov_sess-2.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP/Juelich/Memory_Sleep_Cov_sess-2.err
+Queue
+
+arguments = Sleep_Cov Memory_rgo_age sess-2
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP/Juelich/Memory_rgo_age_Sleep_Cov_sess-2.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP/Juelich/Memory_rgo_age_Sleep_Cov_sess-2.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP/Juelich/Memory_rgo_age_Sleep_Cov_sess-2.err
+Queue
+
+arguments = Sleep_Cov Memory sess-SD
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP/Juelich/Memory_Sleep_Cov_sess-SD.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP/Juelich/Memory_Sleep_Cov_sess-SD.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP/Juelich/Memory_Sleep_Cov_sess-SD.err
+Queue
+
+arguments = Sleep_Cov Memory_rgo_age sess-SD
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_logs/SHAP/Juelich/Memory_rgo_age_Sleep_Cov_sess-SD.log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_outputs/SHAP/Juelich/Memory_rgo_age_Sleep_Cov_sess-SD.out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/Out-of-sample_validation/condor_errors/SHAP/Juelich/Memory_rgo_age_Sleep_Cov_sess-SD.err
+Queue

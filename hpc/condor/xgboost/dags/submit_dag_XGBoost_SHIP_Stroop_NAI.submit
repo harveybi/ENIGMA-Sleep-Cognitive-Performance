@@ -1,0 +1,15 @@
+# The environment
+universe       = vanilla
+getenv         = True
+request_memory = 16GB
+request_disk   = 8GB
+request_cpus   = $(req_cpu)
+
+# Execution
+executable = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/run_XGBoost_SHIP_Stroop_NAI.sh
+
+arguments = "$(feature_comb) $(target) $(req_cpu)"
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_logs/SHIP/ml_pipeline/$(target)_$(feature_comb).log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_outputs/SHIP/ml_pipeline/$(target)_$(feature_comb).out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/XGBoost/condor_errors/SHIP/ml_pipeline/$(target)_$(feature_comb).err
+Queue

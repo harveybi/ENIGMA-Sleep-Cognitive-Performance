@@ -1,0 +1,16 @@
+# The environment
+universe       = vanilla
+getenv         = True
+request_memory = 32GB
+request_disk   = 10GB
+request_cpus   = 1
+
+# Execution
+executable = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/run_SHAP_ridge_SHIP_Stroop_NAI.sh
+
+# arguments = Sleep Stroop
+arguments = "$(feature_comb) $(target)"
+log       = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_logs/SHIP/SHAP/$(target)_$(feature_comb).log
+output    = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_outputs/SHIP/SHAP/$(target)_$(feature_comb).out
+error     = /data/project/sleep_ENIGMA_Cognition/Codes/ENIGMA_Sleep_Cognitive/Code/rd_rg/condor_errors/SHIP/SHAP/$(target)_$(feature_comb).err
+Queue

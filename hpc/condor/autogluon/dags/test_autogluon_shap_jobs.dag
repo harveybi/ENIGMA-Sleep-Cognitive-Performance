@@ -1,0 +1,10 @@
+JOB AutoGluon1 submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon1 feature_comb="Sleep" target="Stroop" req_cpu="16"
+JOB AutoGluon2 submit_dag_AutoGluon_SHIP_Stroop_NAI.submit
+VARS AutoGluon2 feature_comb="Sleep_Cov" target="Stroop" req_cpu="16"
+JOB SHAP1 submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP1 feature_comb="Sleep" target="Stroop"
+JOB SHAP2 submit_dag_SHAP_AutoGluon_SHIP_Stroop_NAI.submit
+VARS SHAP2 feature_comb="Sleep_Cov" target="Stroop"
+PARENT AutoGluon1 CHILD SHAP1
+PARENT AutoGluon2 CHILD SHAP2
