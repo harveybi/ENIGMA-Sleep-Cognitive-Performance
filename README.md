@@ -1,6 +1,6 @@
 # ENIGMA Sleep Cognition
 
-This repository contains the analysis code and reviewer-facing reproducibility materials for the manuscript "Sleep, brain structure, and cognition across ENIGMA cohorts" (working title). The code supports multisite data preparation, machine-learning model training, out-of-sample validation, SHAP/SHAP-IQ interpretation, and manuscript figure/table generation. Participant-level cohort data are not included.
+This repository contains the analysis code for the manuscript “Prediction of cognitive performance by demographics, sleep, and brain morphometry: machine learning findings from the ENIGMA-Sleep Working Group.” The code supports multisite cohort data preparation, leakage-controlled machine learning model training, out-of-cohort validation, SHAP and SHAP-IQ model interpretation, participant subgroup analysis.
 
 ## Repository Map
 
