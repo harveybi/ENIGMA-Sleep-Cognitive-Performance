@@ -42,10 +42,6 @@ python -m pip install -e .
 
 Raw participant-level data, site-level clinical variables, and protected cohort files are not committed. See `DATA_AVAILABILITY.md` and `data/README.md` for controlled-access details and expected local directory layout.
 
-## Results
-
-This repository keeps small, interpretable summary files and selected manuscript outputs. Trained models, large SHAP HTML files, bulk plots, scheduler logs, and intermediate outputs are intentionally excluded and should be regenerated or deposited in an external archive such as Zenodo/OSF when finalized.
-
 ## Citation
 
 TBA
