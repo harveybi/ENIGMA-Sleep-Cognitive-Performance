@@ -1,6 +1,0 @@
-Metric,Dummy,Linear,Ridge,SVM-linear,SVM-rbf,Random forest,XGBoost,AutoGluon
-Test MAE,,,,,,,7.15 (0.50),7.17 (0.51)
-Test MSE,,,,,,,10.41 (1.46),10.37 (1.48)
-Test R2,,,,,,,-0.02 (0.03),-0.01 (0.01)
-Test Pearson r,,,,,,,0.04 (0.07),0.03 (0.07)
-Test Spearman r,,,,,,,0.02 (0.06),0.03 (0.06)

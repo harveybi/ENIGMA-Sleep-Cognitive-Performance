@@ -5,17 +5,17 @@ This repository contains the analysis code and reviewer-facing reproducibility m
 ## Repository Map
 
 ```text
-src/enigma_sleep_cognition/          reusable Python pipeline modules
-scripts/01_data_preparation/         cohort preparation and neuroimaging extraction scripts
-scripts/02_model_training/           AutoGluon, XGBoost, and baseline model scripts
-scripts/03_out_of_sample_validation/ external-site validation scripts
-scripts/04_shap_analysis/            SHAP and SHAP-IQ interpretation scripts
-scripts/05_figures_tables/           manuscript figure/table generation scripts
-hpc/                                 HTCondor and SLURM submission templates
-configs/                             example path and model-set configuration
-results/summaries/                   small summary tables retained for review
-results/manuscript/                  selected manuscript-level outputs
-docs/                                reproducibility and workflow notes
+src/enigma_sleep_cognition/                 reusable Python pipeline modules
+scripts/01_data_preparation/                cohort preparation and neuroimaging extraction scripts
+scripts/02_model_training/                  AutoGluon, XGBoost, and baseline model scripts
+scripts/03_out_of_sample_validation/        external-site validation scripts
+scripts/04_shap_analysis/                   SHAP and SHAP-IQ interpretation scripts
+scripts/05_figures_tables/                  manuscript figure/table generation scripts
+hpc/condor/                                 HTCondor submission templates and DAGMan files
+hpc/slurm/                                  JURECA/SLURM submission templates
+configs/                                    example path and model-set configuration files
+docs/                                       reproducibility and workflow notes
+notebooks/                                  optional notebook location; currently documentation only
 ```
 
 ## Installation

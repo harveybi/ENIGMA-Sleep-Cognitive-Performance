@@ -1,6 +1,0 @@
-Metric,AutoGluon,Dummy,Linear,Ridge,SVM-linear,SVM-rbf,XGBoost,rf
-test_neg_mean_absolute_error,-12.60 (0.54),,,,,,12.65 (0.52),
-test_neg_root_mean_squared_error,-15.69 (0.69),,,,,,15.73 (0.64),
-test_r2,0.00 (0.02),,,,,,-0.00 (0.02),
-test_r_corr,0.12 (0.07),,,,,,0.10 (0.07),
-test_spearmanr,0.11 (0.07),,,,,,0.09 (0.07),
