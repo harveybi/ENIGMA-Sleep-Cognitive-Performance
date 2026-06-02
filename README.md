@@ -1,14 +1,6 @@
 # ENIGMA Sleep Cognition
 
-This repository contains the analysis code, lightweight examples, and reviewer-facing reproducibility materials for the manuscript "Sleep, brain structure, and cognition across ENIGMA cohorts" (working title). The code supports multisite data preparation, machine-learning model training, out-of-sample validation, SHAP/SHAP-IQ interpretation, and manuscript figure/table generation. Participant-level cohort data are not included.
-
-## Citation
-
-Manuscript citation placeholder:
-
-> Bi H, et al. Sleep, brain structure, and cognition across ENIGMA cohorts. Nature Mental Health. Forthcoming.
-
-Software citation details are provided in `CITATION.cff`.
+This repository contains the analysis code and reviewer-facing reproducibility materials for the manuscript "Sleep, brain structure, and cognition across ENIGMA cohorts" (working title). The code supports multisite data preparation, machine-learning model training, out-of-sample validation, SHAP/SHAP-IQ interpretation, and manuscript figure/table generation. Participant-level cohort data are not included.
 
 ## Repository Map
 
@@ -21,7 +13,6 @@ scripts/04_shap_analysis/            SHAP and SHAP-IQ interpretation scripts
 scripts/05_figures_tables/           manuscript figure/table generation scripts
 hpc/                                 HTCondor and SLURM submission templates
 configs/                             example path and model-set configuration
-data/example/                        synthetic data for smoke testing
 results/summaries/                   small summary tables retained for review
 results/manuscript/                  selected manuscript-level outputs
 docs/                                reproducibility and workflow notes
@@ -35,30 +26,6 @@ Create the conda environment:
 conda env create -f environment.yml
 conda activate XGBoost
 python -m pip install -e .
-```
-
-For a minimal smoke-test-only environment:
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-python -m pip install -e .
-```
-
-## Smoke Test
-
-Run the lightweight synthetic-data test from the repository root:
-
-```bash
-bash scripts/run_smoke_test.sh
-```
-
-Expected outputs:
-
-```text
-results/example_outputs/smoke_test_metrics.csv
-results/example_outputs/smoke_test_prediction_plot.svg
 ```
 
 ## Full Analysis Workflow
@@ -78,3 +45,11 @@ Raw participant-level data, site-level clinical variables, and protected cohort 
 ## Results
 
 This repository keeps small, interpretable summary files and selected manuscript outputs. Trained models, large SHAP HTML files, bulk plots, scheduler logs, and intermediate outputs are intentionally excluded and should be regenerated or deposited in an external archive such as Zenodo/OSF when finalized.
+
+## Citation
+
+TBA
+
+## Contact me
+
+Github issue or h.bi@fz-juelich.de
