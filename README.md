@@ -18,14 +18,30 @@ docs/                                       reproducibility and workflow notes
 notebooks/                                  optional notebook location; currently documentation only
 ```
 
+## System Requirements
+
+- Operating system: Linux x86_64 tested on HPC/workstation environments.
+- Main analysis environment: Python 3.10.18.
+- Brain visualization environment: Python 3.11.14.
+- No non-standard hardware is required to inspect or install the code.
+- Full manuscript-scale reproduction requires controlled-access cohort data and HPC resources for large-scale model training, SHAP, SHAP-IQ, and out-of-cohort validation.
+- Typical installation time is approximately 20-40 minutes for the main analysis environment, depending on conda solver speed and network connection.
+
 ## Installation
 
-Create the conda environment:
+Create the main analysis environment:
 
 ```bash
-conda env create -f environment.yml
-conda activate XGBoost
-python -m pip install -e .
+conda env create -f environment-analysis.yml
+conda activate enigma-sleep-cognition-analysis
+python -m pip install -e . --no-deps
+```
+
+Create the optional brain visualization environment:
+
+```bash
+conda env create -f environment-brainviz.yml
+conda activate enigma-sleep-cognition-brainviz
 ```
 
 ## Full Analysis Workflow
@@ -40,7 +56,9 @@ python -m pip install -e .
 
 ## Data Requirements
 
-Raw participant-level data, site-level clinical variables, and protected cohort files are not committed. See `DATA_AVAILABILITY.md` and `data/README.md` for controlled-access details and expected local directory layout.
+Raw participant-level data, site-level clinical variables, and protected cohort files are not committed. See `DATA_AVAILABILITY.md` and `configs/paths.example.yml` for controlled-access details and expected local directory layout.
+
+No demo dataset is provided because manuscript-scale analyses require controlled-access human cohort data. For the Nature code checklist, the demo dataset, demo expected output, and demo runtime items should therefore be left unchecked.
 
 ## Citation
 

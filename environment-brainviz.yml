@@ -1,0 +1,17 @@
+name: enigma-sleep-cognition-brainviz
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11.14
+  - pip
+  - pip:
+      - numpy==1.26.4
+      - nilearn==0.12.1
+      - nibabel==5.3.2
+      - neuromaps==0.0.5
+      - brainspace==0.1.20
+      - surfplot==0.2.0
+      - matplotlib==3.9.0
+      - pandas==2.3.3
+

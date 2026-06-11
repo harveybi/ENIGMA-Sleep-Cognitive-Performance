@@ -1,17 +1,17 @@
 cff-version: 1.2.0
 message: "If you use this code, please cite the associated manuscript and this software repository."
-title: "ENIGMA Sleep Cognition analysis code"
+title: "ENIGMA Sleep Cognitive Performance analysis code"
 authors:
   - family-names: "Bi"
     given-names: "Harvey"
   - name: "ENIGMA Sleep Cognition collaborators"
 version: "0.1.0-review"
-date-released: "2026-06-02"
-repository-code: "https://github.com/<organization>/ENIGMA-Sleep-Cognition"
+date-released: "2026-06-11"
+repository-code: "https://github.com/harveybi/ENIGMA-Sleep-Cognitive-Performance"
 doi: "10.5281/zenodo.placeholder"
 preferred-citation:
   type: article
-  title: "Sleep, brain structure, and cognition across ENIGMA cohorts"
+  title: "Prediction of cognitive performance by demographics, sleep, and brain morphometry: machine learning findings from the ENIGMA-Sleep Working Group"
   authors:
     - family-names: "Bi"
       given-names: "Harvey"
@@ -19,4 +19,3 @@ preferred-citation:
   journal: "Nature Mental Health"
   year: 2026
   status: "in preparation"
-
