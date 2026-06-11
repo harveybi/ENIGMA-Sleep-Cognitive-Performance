@@ -25,7 +25,6 @@ notebooks/                                  optional notebook location; currentl
 - Brain visualization environment: Python 3.11.14.
 - No non-standard hardware is required to inspect or install the code.
 - Full manuscript-scale reproduction requires controlled-access cohort data and HPC resources for large-scale model training, SHAP, SHAP-IQ, and out-of-cohort validation.
-- Typical installation time is approximately 20-40 minutes for the main analysis environment, depending on conda solver speed and network connection.
 
 ## Installation
 
@@ -44,9 +43,27 @@ conda env create -f environment-brainviz.yml
 conda activate enigma-sleep-cognition-brainviz
 ```
 
+## Using the Scripts With Local Data
+
+This repository does not include demo data. The scripts are manuscript analysis entry points that can be run after controlled-access cohort data have been obtained and placed in the expected local directory structure.
+
+1. Use `configs/paths.example.yml` as a template for the local data, neuroimaging, output, and log paths needed for execution.
+2. Adapt script-local path variables such as `data_save_path`, `raw_data_save_path`, `results_path`, and `trained_models_path` to point to the local controlled-access data and output directories.
+3. Run cohort preparation scripts in `scripts/01_data_preparation/` to generate harmonized analysis tables.
+4. Run model-training scripts in `scripts/02_model_training/` after the prepared cohort tables are available.
+5. Run external validation scripts in `scripts/03_out_of_sample_validation/` when validation cohort data are available.
+6. Run SHAP and SHAP-IQ scripts in `scripts/04_shap_analysis/` after trained model artifacts have been generated.
+7. Run figure and table scripts in `scripts/05_figures_tables/` after model, validation, and interpretation outputs are available.
+
+For scripts with command-line arguments, pass the requested feature set, target, and compute settings after local paths have been adapted. For example:
+
+```bash
+python scripts/02_model_training/xgboost/XGBoost_SHIP_Stroop_NAI.py Sleep_Cov Stroop 8
+```
+
 ## Full Analysis Workflow
 
-1. Configure local data paths by copying `configs/paths.example.yml` to `configs/paths.local.yml`.
+1. Configure local data, neuroimaging, output, and log paths using `configs/paths.example.yml` as a template.
 2. Prepare cohort-specific tabular and imaging-derived features with `scripts/01_data_preparation/`.
 3. Train primary models with `scripts/02_model_training/autogluon/` and comparator models with `xgboost/` and `baselines/`.
 4. Run external validation scripts in `scripts/03_out_of_sample_validation/`.
@@ -58,7 +75,7 @@ conda activate enigma-sleep-cognition-brainviz
 
 Raw participant-level data, site-level clinical variables, and protected cohort files are not committed. See `DATA_AVAILABILITY.md` and `configs/paths.example.yml` for controlled-access details and expected local directory layout.
 
-No demo dataset is provided because manuscript-scale analyses require controlled-access human cohort data. For the Nature code checklist, the demo dataset, demo expected output, and demo runtime items should therefore be left unchecked.
+No demo dataset is provided because manuscript-scale analyses require controlled-access cohort data. The workflow instructions above describe how to run the scripts with authorized local data. They should not be interpreted as demo data, demo expected output, or demo runtime.
 
 ## Citation
 
